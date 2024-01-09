@@ -15,12 +15,14 @@ import { PostsTypes } from "@/types/post.types";
 
 export function PostCard({ title, description, className }: PostsTypes) {
   return (
-    <Card className={`w-full h-full p-2 ${className} shadow-lg`}>
+    <Card
+      className={`w-full h-full p-2 ${className} shadow-[0px_15px_0_rgb(147_51_234)] border-[1px] border-purple-800`}
+    >
       <CardHeader className="flex flex-row justify-end items-center">
         <QuoteIcon />
       </CardHeader>
       <CardContent className="flex flex-col gap-5">
-        <CardTitle className="text-lg leading-8 font-bold lg:text-2xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
+        <CardTitle className="text-lg leading-8 font-bold lg:text-2xl opacity-75">
           {title}
         </CardTitle>
       </CardContent>

@@ -19,7 +19,8 @@ const config = {
     },
     extend: {
       boxShadow: {
-        "box-shadow-card": "10px 10px 0 rgb(128, 0, 128)",
+        "dark-box-shadow-article-card": "10px 10px 0px rgb(147, 51, 234)",
+        "dark-box-shadow-post-card": "0px 15px 0px rgb(147, 51, 234)",
       },
       colors: {
         border: "hsl(var(--border))",
