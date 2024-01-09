@@ -74,7 +74,7 @@ export default function AllArticles() {
         <div className="flex items-center gap-4">
           <SearchInput onSearch={setSearchTerm} />
         </div>
-        <div className="grid grid-cols-1 gap-7 py-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4">
           {filteredPosts.map((article: ArticleTypes) => (
             <div key={article._id}>
               <ArticleCard

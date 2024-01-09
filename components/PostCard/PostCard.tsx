@@ -16,7 +16,7 @@ import { PostsTypes } from "@/types/post.types";
 export function PostCard({ title, description, className }: PostsTypes) {
   return (
     <Card
-      className={`w-full h-full p-2 ${className} shadow-[0px_15px_0_rgb(147_51_234)] border-[1px] border-purple-800`}
+      className={`w-full h-full p-2 ${className} shadow-[15px_8px_0px_rgb(147_51_234)] border-[1px] border-purple-800`}
     >
       <CardHeader className="flex flex-row justify-end items-center">
         <QuoteIcon />
