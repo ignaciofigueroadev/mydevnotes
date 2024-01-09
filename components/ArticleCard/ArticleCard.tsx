@@ -35,7 +35,7 @@ export function ArticleCard({
       href={`/article/${slug?.current}`}
       className={`cursor-default ${className}`}
     >
-      <Card className="px-6 py-2 flex flex-col gap-5 group hover:-translate-y-2 hover:border-purple-600 border-[.0625rem] transition-[border, translate] duration-100 flex-1">
+      <Card className="px-6 py-2 flex flex-col gap-5 group hover:-translate-y-2 hover:border-purple-600 border-[.0625rem] transition-[border, translate] duration-100 flex-1  shadow-box-shadow-card">
         <CardHeader className="flex flex-row justify-between items-center relative">
           <p className="text-xs">{formattedDate}</p>
           <ArrowUpRight className="opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
