@@ -25,6 +25,7 @@ export function ArticleCard({
   description,
   slug,
   className,
+  alt,
 }: ArticleTypes) {
   const originalDate = new Date(publishedAt);
   const formattedDate = originalDate.toLocaleDateString();
@@ -48,7 +49,7 @@ export function ArticleCard({
         <CardFooter className="flex flex-col items-start gap-5 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <Avatar>
-              <AvatarImage src={author_image} />
+              <AvatarImage src={author_image} alt={alt} />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <p className="text-xs">{author}</p>

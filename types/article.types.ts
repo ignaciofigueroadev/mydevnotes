@@ -9,4 +9,5 @@ export type ArticleTypes = {
   };
   publishedAt: string;
   className?: string;
+  alt: string;
 };

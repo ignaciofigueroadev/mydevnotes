@@ -84,6 +84,7 @@ export default function AllArticles() {
                 author={article.author}
                 author_image={article.author_image}
                 slug={article.slug}
+                alt={article.author}
               />
             </div>
           ))}
