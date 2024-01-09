@@ -47,6 +47,7 @@ export function LatestArticles() {
             description={article.description}
             author={article.author}
             author_image={article.author_image}
+            alt={article.author}
             className="flex-1 flex h-full"
           />
         </div>
