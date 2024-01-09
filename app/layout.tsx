@@ -2,7 +2,7 @@
 import { ThemeProvider } from "@/providers/theme-provider/theme-provider";
 
 // JETBRAINS font
-import { jetbrains } from "../font/jetbrains";
+import { montserrat } from "@/font/montserrat";
 
 // ProgressBar Component
 import NextTopLoader from "nextjs-toploader";
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${jetbrains.className} font-jetbrains`}>
+      <body className={`${montserrat.className} font-montserrat`}>
         {" "}
         <ThemeProvider
           attribute="class"
