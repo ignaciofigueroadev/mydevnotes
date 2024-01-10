@@ -37,7 +37,7 @@ export function ArticleCard({
       className={`cursor-default ${className}`}
     >
       <Card className="group hover:-translate-y-2 hover:border-purple-600 border-[.0625rem] transition-[border, translate] duration-100 flex-1">
-        <div className="shadow-dark-box-shadow-card rounded-md">
+        <div className="hover:shadow-dark-box-shadow-card rounded-md">
           <CardHeader className="flex flex-row justify-between items-center relative">
             <p className="text-xs">{formattedDate}</p>
             <div className="flex justify-center items-center gap-3 text-xs">
