@@ -1,9 +1,8 @@
+// React
 import { ChangeEvent } from "react";
 
 // Shadcn/ui imports
 import { Input } from "../ui/input";
-
-// Icons
 
 export function SearchInput({
   onSearch,
@@ -15,15 +14,13 @@ export function SearchInput({
   };
 
   return (
-    <header className="py-10 flex justify-between items-center">
-      <div className="flex items-center gap-4">
-        <Input
-          placeholder="Search"
-          type="search"
-          className="w-56 outline-none"
-          onChange={handleSearch}
-        />
-      </div>
+    <header className="py-10">
+      <Input
+        placeholder="Search..."
+        type="search"
+        className="w-56 rounded-full"
+        onChange={handleSearch}
+      />
     </header>
   );
 }
