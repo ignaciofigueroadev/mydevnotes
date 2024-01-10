@@ -43,6 +43,7 @@ export function LatestPosts() {
           <PostCard
             publishedAt={post.publishedAt}
             title={post.title}
+            author={post.author}
             description={<PortableText value={post.body} />}
             className="min-h-auto"
           />

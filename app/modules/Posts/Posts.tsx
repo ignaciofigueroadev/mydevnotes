@@ -51,6 +51,7 @@ export default function Posts() {
                   title={post.title}
                   publishedAt={post.publishedAt}
                   description={<PortableText value={post.body} />}
+                  author={post.author}
                 />
               </div>
             ))}
