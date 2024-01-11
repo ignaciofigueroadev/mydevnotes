@@ -24,12 +24,13 @@ export function SkeletonArticleCard() {
           <Skeleton className="h-8 w-8 rounded-full bg-gray-300 dark:bg-gray-700" />
           <Skeleton className="h-4 w-20 bg-gray-300 dark:bg-gray-700" />
         </div>
-        <div className="flex flex-wrap gap-2">
+        {/* //TODO improve this section */}
+        {/* <div className="flex flex-wrap gap-2">
           <Skeleton className="h-4 w-12 bg-gray-300 dark:bg-gray-700" />
           <Skeleton className="h-4 w-10 bg-gray-300 dark:bg-gray-700" />
           <Skeleton className="h-4 w-16 bg-gray-300 dark:bg-gray-700" />
           <Skeleton className="h-4 w-14 bg-gray-300 dark:bg-gray-700" />
-        </div>
+        </div> */}
       </CardFooter>
     </Card>
   );

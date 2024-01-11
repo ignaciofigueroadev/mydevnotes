@@ -15,7 +15,8 @@ export function LatestArticles() {
 
   if (isLoading) {
     return (
-      <section className="grid grid-cols-1 gap-7">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
+        <SkeletonArticleCard />
         <SkeletonArticleCard />
         <SkeletonArticleCard />
         <SkeletonArticleCard />
