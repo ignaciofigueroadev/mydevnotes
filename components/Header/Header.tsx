@@ -30,7 +30,7 @@ export function Header() {
             <li>
               <Link
                 href="/"
-                className={`flex gap-2 hover:bg-indigo-400 hover:text-black py-3 px-4 rounded-full justify-center items-center cursor-default ${
+                className={`flex gap-2 hover:bg-indigo-400 hover:text-black py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
                   pathname === "/" ? "bg-indigo-400 text-black" : ""
                 }`}
               >
@@ -41,7 +41,7 @@ export function Header() {
             <li>
               <Link
                 href="/posts"
-                className={`flex gap-2 hover:bg-fuchsia-600 hover:text-black py-3 px-4 rounded-full justify-center items-center cursor-default ${
+                className={`flex gap-2 hover:bg-fuchsia-600 hover:text-black py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
                   pathname === "/posts" ? "bg-fuchsia-600 text-black" : ""
                 }`}
               >
@@ -52,7 +52,7 @@ export function Header() {
             <li>
               <Link
                 href="/all-articles"
-                className={`flex gap-1 hover:bg-pink-400 hover:text-black py-3 px-4 rounded-full justify-center items-center cursor-default ${
+                className={`flex gap-1 hover:bg-pink-400 hover:text-black py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
                   pathname === "/all-articles" ? "bg-pink-400 text-black" : ""
                 }`}
               >
