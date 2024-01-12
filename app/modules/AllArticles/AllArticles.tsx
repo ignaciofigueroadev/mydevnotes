@@ -27,7 +27,7 @@ export default function AllArticles() {
         <Header />
         <div className="flex flex-col gap-2 py-10">
           <div className="flex flex-col gap-3 justify-center min-h-[40vh]">
-            <h3 className="font-bold text-3xl lg:text-5xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
+            <h3 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
               Articles
             </h3>
             <p className="opacity-75">
@@ -61,7 +61,7 @@ export default function AllArticles() {
       <Header />
       <section className="py-10 flex flex-col gap-5">
         <div className="flex flex-col justify-center items-center gap-3 min-h-[40vh] text-center">
-          <h3 className="font-bold text-3xl lg:text-5xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
+          <h3 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
             Articles
           </h3>
           <p className="opacity-75">
