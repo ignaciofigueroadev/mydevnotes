@@ -1,5 +1,5 @@
 // Custom components
-import { Goback } from "@/components/GoBack/Goback";
+import { Goback } from "@/components/GoBack/GoBack";
 
 // Metadata
 import type { Metadata } from "next";
