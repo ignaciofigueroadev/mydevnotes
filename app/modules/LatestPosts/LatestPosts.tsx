@@ -37,18 +37,21 @@ export function LatestPosts() {
   const firstFourPosts = sortedPosts.slice(0, 4);
 
   return (
-    <section className="grid grid-cols-1 gap-12">
-      {firstFourPosts.map((post: any) => (
-        <div key={post._id}>
-          <PostCard
-            publishedAt={post.publishedAt}
-            title={post.title}
-            author={post.author}
-            description={<PortableText value={post.body} />}
-            className="min-h-auto"
-          />
-        </div>
-      ))}
-    </section>
+    <>
+      <h2>Latest Posts</h2>
+      <section className="grid grid-cols-1 gap-12">
+        {firstFourPosts.map((post: any) => (
+          <div key={post._id}>
+            <PostCard
+              publishedAt={post.publishedAt}
+              title={post.title}
+              author={post.author}
+              description={<PortableText value={post.body} />}
+              className="min-h-auto"
+            />
+          </div>
+        ))}
+      </section>
+    </>
   );
 }

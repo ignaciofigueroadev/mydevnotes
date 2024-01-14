@@ -38,21 +38,24 @@ export function LatestArticles() {
   const firstFourArticles = sortedArticles.slice(0, 4);
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
-      {firstFourArticles.map((article: ArticleTypes) => (
-        <div key={article._id}>
-          <ArticleCard
-            publishedAt={article.publishedAt}
-            slug={article.slug}
-            title={article.title}
-            description={article.description}
-            author={article.author}
-            author_image={article.author_image}
-            alt={article.author}
-            className="flex-1 flex h-full"
-          />
-        </div>
-      ))}
-    </section>
+    <>
+      <h2>Latest Articles</h2>
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
+        {firstFourArticles.map((article: ArticleTypes) => (
+          <div key={article._id}>
+            <ArticleCard
+              publishedAt={article.publishedAt}
+              slug={article.slug}
+              title={article.title}
+              description={article.description}
+              author={article.author}
+              author_image={article.author_image}
+              alt={article.author}
+              className="flex-1 flex h-full"
+            />
+          </div>
+        ))}
+      </section>
+    </>
   );
 }

@@ -15,15 +15,9 @@ export default function HomePage() {
       <Header />
       <Home />
       <Separator />
-      <h2>Latest Articles</h2>
-      <section>
-        <LatestArticles />
-      </section>
+      <LatestArticles />
       <Separator />
-      <h2>Latest Posts</h2>
-      <section>
-        <LatestPosts />
-      </section>
+      <LatestPosts />
     </main>
   );
 }
