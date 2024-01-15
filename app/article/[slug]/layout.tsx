@@ -1,5 +1,5 @@
 // Custom components
-import { Goback } from "@/components/GoBack/GoBack";
+import { GoBack } from "@/components/GoBack/Goback";
 
 // Metadata
 import type { Metadata } from "next";
@@ -16,7 +16,7 @@ export default function ArticleDetailsLayout({
 }) {
   return (
     <section>
-      <Goback />
+      <GoBack />
       {children}
     </section>
   );

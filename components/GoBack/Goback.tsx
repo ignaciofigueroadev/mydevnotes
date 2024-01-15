@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 // Icons
 import { ArrowLeft } from "lucide-react";
 
-export function Goback() {
+export function GoBack() {
   const router = useRouter();
   return (
     <Button
