@@ -28,7 +28,7 @@ export function MobileMenu() {
               href="/"
               className={`${
                 pathname === "/"
-                  ? "bg-cyan-300 text-black py-3 px-4 rounded-full"
+                  ? "bg-cyan-300 text-black py-3 px-8 rounded-full"
                   : ""
               }`}
             >
@@ -40,7 +40,7 @@ export function MobileMenu() {
               href="/posts"
               className={`${
                 pathname === "/posts"
-                  ? "bg-fuchsia-700 text-black py-3 px-4 rounded-full"
+                  ? "bg-fuchsia-700 text-black py-3 px-8 rounded-full"
                   : ""
               }`}
             >
@@ -52,7 +52,7 @@ export function MobileMenu() {
               href="/all-articles"
               className={`${
                 pathname === "/all-articles"
-                  ? "bg-pink-400 text-black py-3 px-4 rounded-full"
+                  ? "bg-pink-400 text-black py-3 px-8 rounded-full"
                   : ""
               }`}
             >
