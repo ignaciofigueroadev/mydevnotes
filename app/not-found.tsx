@@ -1,6 +1,5 @@
 // Components
-
-import { GoBack } from "@/components/GoBack/Goback";
+import { GoBack } from "@/components/GoBack/GoBack";
 
 export default async function NotFound() {
   return (
