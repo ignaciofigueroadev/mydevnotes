@@ -13,7 +13,7 @@ interface GoBackProps {
   title: string;
 }
 
-export function GoBack({ title }: GoBackProps) {
+export function BackButton({ title }: GoBackProps) {
   const router = useRouter();
   return (
     <Button

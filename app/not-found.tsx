@@ -1,5 +1,5 @@
 // Components
-import { GoBack } from "@/components/GoBack/GoBack";
+import { BackButton } from "@/components/BackButton/BackButton";
 
 export default async function NotFound() {
   return (
@@ -13,7 +13,7 @@ export default async function NotFound() {
         have been removed, name changed or is temporarily unavailable
       </p>
       <div className="flex items-center justify-center gap-4">
-        <GoBack title="Back Home" />
+        <BackButton title="Back Home" />
       </div>
     </section>
   );
