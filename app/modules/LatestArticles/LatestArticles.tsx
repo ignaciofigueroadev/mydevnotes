@@ -15,11 +15,14 @@ export function LatestArticles() {
 
   if (isLoading) {
     return (
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
-        <SkeletonArticleCard />
-        <SkeletonArticleCard />
-        <SkeletonArticleCard />
-        <SkeletonArticleCard />
+      <section className="py-10 flex flex-col gap-6">
+        <h2 className="font-bold text-violet-400">Latest Articles</h2>
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <SkeletonArticleCard />
+          <SkeletonArticleCard />
+          <SkeletonArticleCard />
+          <SkeletonArticleCard />
+        </section>
       </section>
     );
   }
@@ -38,9 +41,9 @@ export function LatestArticles() {
   const firstFourArticles = sortedArticles.slice(0, 4);
 
   return (
-    <>
-      <h2>Latest Articles</h2>
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
+    <section className="py-10 flex flex-col gap-6">
+      <h2 className="font-bold text-violet-400 text-xl">Latest Articles</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
         {firstFourArticles.map((article: ArticleTypes) => (
           <div key={article._id}>
             <ArticleCard
@@ -55,7 +58,7 @@ export function LatestArticles() {
             />
           </div>
         ))}
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

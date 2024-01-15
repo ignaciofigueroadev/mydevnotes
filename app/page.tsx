@@ -11,7 +11,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col gap-12">
+    <main className="flex flex-col gap-6">
       <Header />
       <Home />
       <Separator />

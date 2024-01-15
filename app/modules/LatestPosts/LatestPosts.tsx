@@ -37,9 +37,9 @@ export function LatestPosts() {
   const firstFourPosts = sortedPosts.slice(0, 4);
 
   return (
-    <>
-      <h2>Latest Posts</h2>
-      <section className="grid grid-cols-1 gap-12">
+    <section className="py-10 flex flex-col gap-6">
+      <h2 className="font-bold text-violet-400 text-xl">Latest Posts</h2>
+      <div className="grid grid-cols-1 gap-12">
         {firstFourPosts.map((post: any) => (
           <div key={post._id}>
             <PostCard
@@ -51,7 +51,7 @@ export function LatestPosts() {
             />
           </div>
         ))}
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
