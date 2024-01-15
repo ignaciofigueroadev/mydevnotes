@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "My Dev Notes",
-  description: "",
+  description: "This is an article",
 };
 
 export default function ArticleDetailsLayout({
