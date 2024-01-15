@@ -3,7 +3,7 @@ import { GoBack } from "@/components/GoBack/GoBack";
 
 export default async function NotFound() {
   return (
-    <section className="flex flex-col justify-center items-start gap-3 min-h-screen">
+    <section className="flex flex-col justify-center items-start gap-5 min-h-screen">
       <h2 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text">
         404
       </h2>
@@ -13,8 +13,7 @@ export default async function NotFound() {
         have been removed, name changed or is temporarily unavailable
       </p>
       <div className="flex items-center justify-center gap-4">
-        <GoBack />
-        <p className="text-xs">Back Home</p>
+        <GoBack title="Back Home" />
       </div>
     </section>
   );

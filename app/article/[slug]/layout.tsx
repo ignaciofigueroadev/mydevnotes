@@ -16,7 +16,7 @@ export default function ArticleDetailsLayout({
 }) {
   return (
     <section>
-      <GoBack />
+      <GoBack title="Go Back" />
       {children}
     </section>
   );

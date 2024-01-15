@@ -9,16 +9,20 @@ import { Button } from "../ui/button";
 // Icons
 import { ArrowLeft } from "lucide-react";
 
-export function GoBack() {
+interface GoBackProps {
+  title: string;
+}
+
+export function GoBack({ title }: GoBackProps) {
   const router = useRouter();
   return (
     <Button
-      variant={"outline"}
+      variant="outline"
       className="flex gap-2"
       onClick={() => router.back()}
     >
       <ArrowLeft />
-      {/* Back */}
+      <p>{title}</p>
     </Button>
   );
 }
