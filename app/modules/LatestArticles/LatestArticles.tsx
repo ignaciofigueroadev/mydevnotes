@@ -16,7 +16,7 @@ export function LatestArticles() {
   if (isLoading) {
     return (
       <section className="py-10 flex flex-col gap-6">
-        <h2 className="font-bold text-violet-400">Latest Articles</h2>
+        <h2 className="font-bold opacity-75">Latest Articles</h2>
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <SkeletonArticleCard />
           <SkeletonArticleCard />
@@ -42,7 +42,7 @@ export function LatestArticles() {
 
   return (
     <section className="py-10 flex flex-col gap-6">
-      <h2 className="font-bold text-violet-400 text-xl">Latest Articles</h2>
+      <h2 className="font-bold opacity-75 text-xl">Latest Articles</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
         {firstFourArticles.map((article: ArticleTypes) => (
           <div key={article._id}>

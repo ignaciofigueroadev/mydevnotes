@@ -15,10 +15,14 @@ export function LatestPosts() {
 
   if (isLoading) {
     return (
-      <section className="grid grid-cols-1 gap-7">
-        <SkeletonArticleCard />
-        <SkeletonArticleCard />
-        <SkeletonArticleCard />
+      <section>
+        <h2 className="font-bold opacity-75 text-xl">Latest Posts</h2>
+        <div className="grid grid-cols-1 gap-7">
+          <SkeletonArticleCard />
+          <SkeletonArticleCard />
+          <SkeletonArticleCard />
+          <SkeletonArticleCard />
+        </div>
       </section>
     );
   }
@@ -38,7 +42,7 @@ export function LatestPosts() {
 
   return (
     <section className="py-10 flex flex-col gap-6">
-      <h2 className="font-bold text-violet-400 text-xl">Latest Posts</h2>
+      <h2 className="font-bold opacity-75 text-xl">Latest Posts</h2>
       <div className="grid grid-cols-1 gap-12">
         {firstFourPosts.map((post: any) => (
           <div key={post._id}>
