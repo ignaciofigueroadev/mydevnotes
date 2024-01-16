@@ -2,7 +2,7 @@
 
 // Custom components
 import { PostCard } from "@/components/PostCard/PostCard";
-import { SkeletonArticleCard } from "@/components/SkeletonArticleCard/SkeletonArticleCard";
+import { SkeletonPostCard } from "@/components/SkeletonPostCard/SkeletonPostCard";
 
 // Get articles
 import { usePosts } from "@/utils/getPosts";
@@ -15,13 +15,13 @@ export function LatestPosts() {
 
   if (isLoading) {
     return (
-      <section>
+      <section className="py-10 flex flex-col gap-6">
         <h2 className="font-bold opacity-75 text-xl">Latest Posts</h2>
-        <div className="grid grid-cols-1 gap-7">
-          <SkeletonArticleCard />
-          <SkeletonArticleCard />
-          <SkeletonArticleCard />
-          <SkeletonArticleCard />
+        <div className="grid grid-cols-1 gap-12">
+          <SkeletonPostCard />
+          <SkeletonPostCard />
+          <SkeletonPostCard />
+          <SkeletonPostCard />
         </div>
       </section>
     );
