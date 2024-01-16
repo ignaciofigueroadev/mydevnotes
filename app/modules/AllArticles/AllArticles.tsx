@@ -4,7 +4,6 @@ import { useState } from "react";
 
 // Custom components
 import { ArticleCard } from "@/components/ArticleCard/ArticleCard";
-import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
 import { SearchInput } from "@/components/SearchInput/SearchInput";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard/SkeletonArticleCard";
@@ -26,7 +25,7 @@ export default function AllArticles() {
       <>
         <Header />
         <div className="flex flex-col gap-2 py-10">
-          <div className="flex flex-col gap-3 justify-center min-h-[40vh]">
+          <div className="flex flex-col gap-3 justify-center items-center min-h-[40vh]">
             <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
               Articles
             </h3>
@@ -34,15 +33,16 @@ export default function AllArticles() {
               In this section you are going to find articles about tech and
               coding. Check them!
             </p>
+            <ScrollDown />
           </div>
           <Separator />
           <SearchInput onSearch={setSearchTerm} />
-          <section className="grid grid-cols-1 gap-7">
+          <section className="grid grid-cols-2 gap-7">
+            <SkeletonArticleCard />
             <SkeletonArticleCard />
             <SkeletonArticleCard />
             <SkeletonArticleCard />
           </section>
-          <Footer />
         </div>
       </>
     );
@@ -74,20 +74,28 @@ export default function AllArticles() {
         <div className="flex items-center gap-4">
           <SearchInput onSearch={setSearchTerm} />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4">
-          {filteredPosts.map((article: ArticleTypes) => (
-            <div key={article._id}>
-              <ArticleCard
-                title={article.title}
-                publishedAt={article.publishedAt}
-                description={article.description}
-                author={article.author}
-                author_image={article.author_image}
-                slug={article.slug}
-                alt={article.author}
-              />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4 justify-center items-center">
+          {filteredPosts.length === 0 ? (
+            <div className="col-span-4">
+              <p className="text-center">
+                No articles found. Please try a different search term.
+              </p>
             </div>
-          ))}
+          ) : (
+            filteredPosts.map((article: ArticleTypes) => (
+              <div key={article._id}>
+                <ArticleCard
+                  title={article.title}
+                  publishedAt={article.publishedAt}
+                  description={article.description}
+                  author={article.author}
+                  author_image={article.author_image}
+                  slug={article.slug}
+                  alt={article.author}
+                />
+              </div>
+            ))
+          )}
         </div>
       </section>
     </>
