@@ -29,16 +29,8 @@ export default function ArticlePage({ params }: Props) {
   }
 
   return (
-    <div key={article._id} className="flex flex-col gap-2">
-      <div className="flex flex-col gap-3 min-h-screen max-w-screen pt-10">
-        <div className="h-full p-12 md:p-28 w-full rounded-md bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 ">
-          <div className="flex flex-col text-center gap-4 h-full w-full items-center justify-center">
-            <h3 className="text-2xl font-black sm:text-sm">{article.title}</h3>
-            <p className="sm:text-sm">{article.description}</p>
-          </div>
-        </div>
-        <PortableText value={article.body} components={RichTextComponents} />
-      </div>
+    <div key={article._id} className="flex flex-col gap-2 pt-12">
+      <PortableText value={article.body} components={RichTextComponents} />
     </div>
   );
 }
