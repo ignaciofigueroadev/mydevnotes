@@ -3,7 +3,9 @@ import { SpinnerTypes } from "./Spinner.types";
 
 export function Spinner({ className }: SpinnerTypes) {
   return (
-    <div className={`flex items-center justify-center space-x-2 ${className}`}>
+    <div
+      className={`flex items-center justify-center min-h-[80vh] space-x-2 ${className}`}
+    >
       <svg
         className="h-8 w-8 animate-spin stroke-gray-500"
         viewBox="0 0 256 256"

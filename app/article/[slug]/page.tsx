@@ -19,9 +19,7 @@ export default function ArticlePage({ params }: Props) {
   const { article, isError, isLoading } = useArticlesSlug(slug);
 
   if (isLoading) {
-    return (
-      <Spinner className="flex justify-center items-center min-h-screen" />
-    );
+    return <Spinner />;
   }
 
   if (isError) {
