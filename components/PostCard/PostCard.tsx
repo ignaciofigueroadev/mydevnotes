@@ -21,7 +21,7 @@ export function PostCard({
 }: PostsTypes) {
   return (
     <Card
-      className={`w-full h-full ${className} border-[1px] border-purple-800`}
+      className={`w-full h-full ${className} border-[1px] border-purple-800 post-fade`}
     >
       <div className="shadow-dark-box-shadow-card rounded-md">
         <CardHeader className="flex flex-row justify-end items-center">

@@ -41,7 +41,7 @@ export function LatestArticles() {
   const firstFourArticles = sortedArticles.slice(0, 4);
 
   return (
-    <section className="py-10 flex flex-col gap-6">
+    <section className="py-10 flex flex-col gap-6" id="latest-articles">
       <h2 className="font-bold opacity-75 text-xl">Latest Articles</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
         {firstFourArticles.map((article: ArticleTypes) => (
@@ -54,7 +54,6 @@ export function LatestArticles() {
               author={article.author}
               author_image={article.author_image}
               alt={article.author}
-              className="flex-1 flex h-full"
             />
           </div>
         ))}

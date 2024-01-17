@@ -68,7 +68,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;
@@ -90,4 +90,39 @@
   -moz-border-radius: 0.375rem;
   -ms-border-radius: 0.375rem;
   -o-border-radius: 0.375rem;
+}
+
+.post-fade {
+  animation: linear fade both;
+  -webkit-animation: linear fade both;
+  animation-range: entry 30% cover 15%;
+  animation-timeline: view();
+}
+
+.article-fade {
+  animation: linear fade both;
+  -webkit-animation: linear fade both;
+  animation-range: entry 15% cover 30%;
+  animation-timeline: view();
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+    scale-webkit-transform: scale;
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    scale-webkit-transform: scale;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
 }

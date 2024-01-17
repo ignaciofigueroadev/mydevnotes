@@ -51,7 +51,6 @@ export function LatestPosts() {
               title={post.title}
               author={post.author}
               description={<PortableText value={post.body} />}
-              className="min-h-auto"
             />
           </div>
         ))}

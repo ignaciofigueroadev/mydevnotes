@@ -5,6 +5,7 @@ import { useState } from "react";
 // Custom components
 import { ArticleCard } from "@/components/ArticleCard/ArticleCard";
 import { Header } from "@/components/Header/Header";
+import { ScrollDown } from "@/components/ScrollDown/ScrollDown";
 import { SearchInput } from "@/components/SearchInput/SearchInput";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard/SkeletonArticleCard";
 
@@ -12,7 +13,6 @@ import { SkeletonArticleCard } from "@/components/SkeletonArticleCard/SkeletonAr
 import { useArticles } from "@/utils/getArticles";
 
 // Types
-import { ScrollDown } from "@/components/ScrollDown/ScrollDown";
 import { ArticleTypes } from "@/types/article.types";
 
 export default function AllArticles() {
@@ -24,7 +24,7 @@ export default function AllArticles() {
       <>
         <Header />
         <div className="flex flex-col gap-2 py-10">
-          <div className="flex flex-col gap-3 justify-center items-center text-center min-h-[40vh]">
+          <div className="flex flex-col gap-3 justify-center items-center text-center min-h-[60vh]">
             <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
               Articles
             </h3>
@@ -58,7 +58,7 @@ export default function AllArticles() {
     <>
       <Header />
       <section className="py-10 flex flex-col gap-5">
-        <div className="flex flex-col justify-center items-center gap-3 min-h-[40vh] text-center">
+        <div className="flex flex-col justify-center items-center gap-3 min-h-[60vh] text-center">
           <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
             Articles
           </h3>
