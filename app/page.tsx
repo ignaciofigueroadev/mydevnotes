@@ -14,7 +14,6 @@ export default function HomePage() {
     <main className="flex flex-col gap-6">
       <Header />
       <Home />
-      <Separator />
       <LatestArticles />
       <Separator />
       <LatestPosts />

@@ -5,7 +5,6 @@ import { Header } from "@/components/Header/Header";
 import { PostCard } from "@/components/PostCard/PostCard";
 import { ScrollDown } from "@/components/ScrollDown/ScrollDown";
 import { SkeletonPostCard } from "@/components/SkeletonPostCard/SkeletonPostCard";
-import { Separator } from "@/components/ui/separator";
 
 // Get posts
 import { usePosts } from "@/utils/getPosts";
@@ -31,7 +30,6 @@ export default function Posts() {
               </p>
               <ScrollDown />
             </div>
-            <Separator />
             <div className="grid gap-10 grid-cols-1 justify-center items-center pt-10">
               <SkeletonPostCard />
               <SkeletonPostCard />
@@ -63,7 +61,6 @@ export default function Posts() {
             </p>
             <ScrollDown />
           </div>
-          <Separator />
           <div className="grid gap-10 grid-cols-1 justify-center items-center pt-10">
             {posts.map((post: any) => (
               <div key={post._id}>

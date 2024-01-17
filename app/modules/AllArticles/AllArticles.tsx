@@ -7,7 +7,6 @@ import { ArticleCard } from "@/components/ArticleCard/ArticleCard";
 import { Header } from "@/components/Header/Header";
 import { SearchInput } from "@/components/SearchInput/SearchInput";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard/SkeletonArticleCard";
-import { Separator } from "@/components/ui/separator";
 
 // Get posts
 import { useArticles } from "@/utils/getArticles";
@@ -35,7 +34,6 @@ export default function AllArticles() {
             </p>
             <ScrollDown />
           </div>
-          <Separator />
           <SearchInput onSearch={setSearchTerm} />
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
             <SkeletonArticleCard />
@@ -70,7 +68,6 @@ export default function AllArticles() {
           </p>
           <ScrollDown />
         </div>
-        <Separator />
         <div className="flex items-center gap-4">
           <SearchInput onSearch={setSearchTerm} />
         </div>
