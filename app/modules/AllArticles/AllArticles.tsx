@@ -25,7 +25,7 @@ export default function AllArticles() {
       <>
         <Header />
         <div className="flex flex-col gap-2 py-10">
-          <div className="flex flex-col gap-3 justify-center items-center min-h-[40vh]">
+          <div className="flex flex-col gap-3 justify-center items-center text-center min-h-[40vh]">
             <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
               Articles
             </h3>
@@ -37,7 +37,7 @@ export default function AllArticles() {
           </div>
           <Separator />
           <SearchInput onSearch={setSearchTerm} />
-          <section className="grid grid-cols-2 gap-7">
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
             <SkeletonArticleCard />
             <SkeletonArticleCard />
             <SkeletonArticleCard />
