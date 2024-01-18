@@ -14,13 +14,19 @@ export function Home() {
           My Dev Notes
         </h1>
         <div className="flex gap-8">
-          <Link href="2asfas">
-            <Button variant="ghost" className="font-bold">
+          <Link href="/about">
+            <Button
+              variant="outline"
+              className="font-bold hover:-translate-y-2 transition-all duration-150"
+            >
               About
             </Button>
           </Link>
           <Link href="#latest-articles">
-            <Button variant="ghost" className="font-bold">
+            <Button
+              variant="outline"
+              className="font-bold hover:-translate-y-2 transition-all duration-150"
+            >
               Explore
             </Button>
           </Link>
