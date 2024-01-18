@@ -7,6 +7,9 @@ import { montserrat } from "@/font/montserrat";
 // ProgressBar Component
 import NextTopLoader from "nextjs-toploader";
 
+// Components
+import { Header } from "@/components/Header/Header";
+
 // Global styles
 import "./globals.css";
 
@@ -36,6 +39,7 @@ export default function RootLayout({
         >
           <div className="container md:px-40 lg:px-64 xl:px-72 [animation:linear_reveal_both] [animation-range:entry_5%_cover_30%] [animation-timeline:view()] py-10">
             <NextTopLoader color="#6d28d9" />
+            <Header />
             {children}
           </div>
         </ThemeProvider>
