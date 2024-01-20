@@ -16,7 +16,7 @@ export function Home() {
           My Dev Notes
         </h1>
         <p>
-          A blog build by a{" "}
+          A blog built by a{" "}
           <span className="bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text">
             developer
           </span>{" "}
