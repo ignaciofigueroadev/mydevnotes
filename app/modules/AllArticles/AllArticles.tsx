@@ -14,6 +14,7 @@ import { useArticles } from "@/utils/getArticles";
 
 // Types
 import { ArticleTypes } from "@/types/article.types";
+import Link from "next/link";
 
 export default function AllArticles() {
   const { articles, isError, isLoading } = useArticles();
@@ -66,12 +67,18 @@ export default function AllArticles() {
             In this section you are going to find articles about tech and
             coding. Check them!
           </p>
-          <ScrollDown />
+          <Link href="#all-articles">
+            <ScrollDown />
+          </Link>
         </div>
+
         <div className="flex items-center gap-4">
           <SearchInput onSearch={setSearchTerm} />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4 justify-center items-center">
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4 justify-center items-center"
+          id="all-articles"
+        >
           {filteredPosts.length === 0 ? (
             <div className="col-span-4">
               <p className="text-center">
