@@ -1,8 +1,10 @@
 "use client";
 
+// Shadcn/ui components
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
+// Menu
 import { Menu } from "lucide-react";
 
 // Next imports
@@ -49,7 +51,7 @@ export function MobileMenu() {
           </li>
           <li className="hover:opacity-70 duration-100 ease-out transition-opacity">
             <Link
-              href="/all-articles"
+              href="/articles"
               className={`${
                 pathname === "/all-articles"
                   ? "bg-pink-400 text-black py-3 px-8 rounded-full"

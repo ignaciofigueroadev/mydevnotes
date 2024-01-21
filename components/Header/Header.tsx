@@ -51,7 +51,7 @@ export function Header() {
             </li>
             <li>
               <Link
-                href="/all-articles"
+                href="/articles"
                 className={`flex gap-1 hover:bg-pink-400 hover:text-white py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
                   pathname === "/all-articles" ? "bg-pink-400 text-white" : ""
                 }`}
