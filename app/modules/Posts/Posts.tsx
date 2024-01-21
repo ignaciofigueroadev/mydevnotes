@@ -24,7 +24,7 @@ export default function Posts() {
           <div className=" flex flex-col gap-5">
             <div className="flex flex-col gap-8 justify-center items-center min-h-[60vh] text-center">
               <div>
-                <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
+                <h3 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
                   Posts
                 </h3>
                 <p>
