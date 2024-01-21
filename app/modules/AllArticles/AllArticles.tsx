@@ -24,8 +24,8 @@ export default function AllArticles() {
     return (
       <>
         <Header />
-        <div className="flex flex-col gap-2 py-10">
-          <div className="flex flex-col gap-3 justify-center items-center text-center min-h-[60vh]">
+        <div className="flex flex-col gap-2 py-10 ">
+          <div className="flex flex-col gap-3 justify-center items-center text-center min-h-[60vh] animate-fade animate-once animate-duration-1000 animate-ease-in-out">
             <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
               Articles
             </h3>
@@ -71,7 +71,6 @@ export default function AllArticles() {
             <ScrollDown />
           </Link>
         </div>
-
         <div className="flex items-center gap-4">
           <SearchInput onSearch={setSearchTerm} />
         </div>

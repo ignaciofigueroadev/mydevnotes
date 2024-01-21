@@ -22,7 +22,7 @@ export default function Posts() {
         <Header />
         <section className="py-10">
           <div className=" flex flex-col gap-5">
-            <div className="flex flex-col gap-3 justify-center items-center min-h-[60vh] text-center">
+            <div className="flex flex-col gap-8 justify-center items-center min-h-[60vh] text-center animate-fade animate-once animate-duration-1000 animate-ease-in-out">
               <div>
                 <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
                   Posts
