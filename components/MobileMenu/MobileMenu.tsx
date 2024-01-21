@@ -53,7 +53,7 @@ export function MobileMenu() {
             <Link
               href="/articles"
               className={`${
-                pathname === "/all-articles"
+                pathname === "/articles"
                   ? "bg-pink-400 text-black py-3 px-8 rounded-full"
                   : ""
               }`}
