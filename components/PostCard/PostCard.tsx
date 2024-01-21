@@ -10,15 +10,19 @@ import {
 // Icon
 import { QuoteIcon } from "lucide-react";
 
-// Types
-import { PostsTypes } from "@/types/post.types";
+interface PostCardProps {
+  title: string;
+  description: string;
+  className: string;
+  author: string;
+}
 
 export function PostCard({
   title,
   description,
   className,
   author,
-}: PostsTypes) {
+}: PostCardProps) {
   return (
     <Card
       className={`w-full h-full ${className} border-[1px] border-purple-800 post-fade`}

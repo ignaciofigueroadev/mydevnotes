@@ -1,7 +1,8 @@
-// Types
-import { SpinnerTypes } from "./Spinner.types";
+interface SpinnerProps {
+  className: string;
+}
 
-export function Spinner({ className }: SpinnerTypes) {
+export function Spinner({ className }: SpinnerProps) {
   return (
     <div
       className={`flex items-center justify-center min-h-[80vh] space-x-2 ${className}`}

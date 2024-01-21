@@ -7,8 +7,6 @@ import { usePathname } from "next/navigation";
 import { MobileMenu } from "../MobileMenu/MobileMenu";
 import { ToggleThemeButton } from "../ToggleThemeButton/ToggleThemeButton";
 
-// shadcn/ui components
-
 // Next imports
 import Link from "next/link";
 
