@@ -47,7 +47,6 @@ export function LatestPosts() {
         {firstFourPosts.map((post: any) => (
           <div key={post._id}>
             <PostCard
-              publishedAt={post.publishedAt}
               title={post.title}
               author={post.author}
               description={<PortableText value={post.body} />}

@@ -9,12 +9,13 @@ import {
 
 // Icon
 import { QuoteIcon } from "lucide-react";
+import React from "react";
 
 interface PostCardProps {
-  title: string;
-  description: string;
-  className: string;
-  author: string;
+  title?: string;
+  description?: React.ReactNode;
+  className?: string;
+  author?: string;
 }
 
 export function PostCard({
