@@ -79,7 +79,6 @@ export default function Posts() {
               <div key={post._id}>
                 <PostCard
                   title={post.title}
-                  publishedAt={post.publishedAt}
                   description={<PortableText value={post.body} />}
                   author={post.author}
                 />
