@@ -30,7 +30,7 @@ export function MobileMenu() {
               href="/"
               className={`${
                 pathname === "/"
-                  ? "bg-cyan-300 text-black py-3 px-8 rounded-full"
+                  ? "bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text"
                   : ""
               }`}
             >
@@ -42,7 +42,7 @@ export function MobileMenu() {
               href="/posts"
               className={`${
                 pathname === "/posts"
-                  ? "bg-fuchsia-700 text-black py-3 px-8 rounded-full"
+                  ? "bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text"
                   : ""
               }`}
             >
@@ -54,7 +54,7 @@ export function MobileMenu() {
               href="/articles"
               className={`${
                 pathname === "/articles"
-                  ? "bg-pink-400 text-black py-3 px-8 rounded-full"
+                  ? "bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text"
                   : ""
               }`}
             >
