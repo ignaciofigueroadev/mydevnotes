@@ -1,5 +1,5 @@
 interface SpinnerProps {
-  className: string;
+  className?: string;
 }
 
 export function Spinner({ className }: SpinnerProps) {
