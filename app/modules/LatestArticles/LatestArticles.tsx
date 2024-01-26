@@ -5,7 +5,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
 // Get articles
-import { useArticles } from "@/utils/getArticles";
+import { useArticles } from "@/utils/useArticles";
 
 // Types
 import { ArticleTypes } from "@/types/article.types";

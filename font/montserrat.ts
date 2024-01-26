@@ -1,3 +1,4 @@
+// Font of the Project
 import { Montserrat } from "next/font/google";
 
 export const montserrat = Montserrat({

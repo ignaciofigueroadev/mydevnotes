@@ -10,10 +10,12 @@ import { SearchInput } from "@/components/SearchInput";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
 // Get posts
-import { useArticles } from "@/utils/getArticles";
+import { useArticles } from "@/utils/useArticles";
 
 // Types
 import { ArticleTypes } from "@/types/article.types";
+
+// Next
 import Link from "next/link";
 
 export default function AllArticles() {

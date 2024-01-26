@@ -1,7 +1,9 @@
-// useArticlesSlug.ts
+// Sanity
 import { groq } from "next-sanity";
-import useSWR from "swr";
 import { client } from "../sanity/lib/client";
+
+// SWR
+import useSWR from "swr";
 
 const fetchArticleData = async (slug: string) => {
   const result = await client.fetch(

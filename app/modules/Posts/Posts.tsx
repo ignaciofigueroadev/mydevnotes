@@ -7,7 +7,7 @@ import { ScrollDown } from "@/components/ScrollDown";
 import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 
 // Get posts
-import { usePosts } from "@/utils/getPosts";
+import { usePosts } from "@/utils/usePosts";
 
 // Portable text
 import { PortableText } from "@portabletext/react";

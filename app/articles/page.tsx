@@ -1,3 +1,4 @@
+// Module
 import AllArticles from "@/app/modules/AllArticles/AllArticles";
 
 export default function AllArticlesPage() {

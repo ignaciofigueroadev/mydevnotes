@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { MobileMenu } from "./MobileMenu";
 import { ToggleThemeButton } from "./ToggleThemeButton";
 
-// Next imports
+// Next
 import Link from "next/link";
 
 // Icons
