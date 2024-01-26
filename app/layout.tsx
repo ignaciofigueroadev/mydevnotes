@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   title: "My Dev Notes | Home",
   description:
     "Welcome where tech meets curiosity. Quick reads on web development, fun facts, history, tips, and more.",
+  keywords: [
+    "Blog",
+    "Developers",
+    "Devs",
+    "Programming",
+    "Coding",
+    "Web Development",
+  ],
 };
 
 export default function RootLayout({
