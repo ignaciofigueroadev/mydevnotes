@@ -4,8 +4,8 @@
 import { usePathname } from "next/navigation";
 
 // Custom components
-import { MobileMenu } from "../MobileMenu/MobileMenu";
-import { ToggleThemeButton } from "../ToggleThemeButton/ToggleThemeButton";
+import { MobileMenu } from "./MobileMenu";
+import { ToggleThemeButton } from "./ToggleThemeButton";
 
 // Next imports
 import Link from "next/link";

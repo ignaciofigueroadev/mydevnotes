@@ -1,8 +1,8 @@
 "use client";
 
 // Custom components
-import { ArticleCard } from "@/components/ArticleCard/ArticleCard";
-import { SkeletonArticleCard } from "@/components/SkeletonArticleCard/SkeletonArticleCard";
+import { ArticleCard } from "@/components/ArticleCard";
+import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
 // Get articles
 import { useArticles } from "@/utils/getArticles";

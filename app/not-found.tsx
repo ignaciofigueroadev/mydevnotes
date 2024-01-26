@@ -1,5 +1,5 @@
 // Components
-import { BackButton } from "@/components/BackButton/BackButton";
+import { BackButton } from "@/components/BackButton";
 
 export default async function NotFound() {
   return (

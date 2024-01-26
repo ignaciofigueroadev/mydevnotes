@@ -4,7 +4,7 @@
 import { useRouter } from "next/navigation";
 
 // Shadcn/ui components
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 
 // Icons
 import { ArrowLeft } from "lucide-react";

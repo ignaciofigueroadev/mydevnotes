@@ -2,7 +2,7 @@
 import { ChangeEvent } from "react";
 
 // Shadcn/ui imports
-import { Input } from "../ui/input";
+import { Input } from "./ui/input";
 
 export function SearchInput({
   onSearch,

@@ -1,10 +1,10 @@
 // Shadcn/ui componentes
 
 // Custom components
-import { Header } from "@/components/Header/Header";
+import { Header } from "@/components/Header";
 
 // Next components
-import { ScrollDown } from "@/components/ScrollDown/ScrollDown";
+import { ScrollDown } from "@/components/ScrollDown";
 import Link from "next/link";
 
 export function Home() {

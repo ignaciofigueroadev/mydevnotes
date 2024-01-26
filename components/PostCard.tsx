@@ -9,7 +9,6 @@ import {
 
 // Icon
 import { QuoteIcon } from "lucide-react";
-import React from "react";
 
 interface PostCardProps {
   title?: string;

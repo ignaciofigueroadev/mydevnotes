@@ -1,8 +1,8 @@
 "use client";
 
 // Custom components
-import { PostCard } from "@/components/PostCard/PostCard";
-import { SkeletonPostCard } from "@/components/SkeletonPostCard/SkeletonPostCard";
+import { PostCard } from "@/components/PostCard";
+import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 
 // Get articles
 import { usePosts } from "@/utils/getPosts";

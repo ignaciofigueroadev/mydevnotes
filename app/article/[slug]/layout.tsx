@@ -1,5 +1,5 @@
 // Custom components
-import { BackButton } from "@/components/BackButton/BackButton";
+import { BackButton } from "@/components/BackButton";
 
 // Metadata
 import type { Metadata } from "next";

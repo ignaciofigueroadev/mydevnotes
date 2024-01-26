@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 // Custom components
-import { ArticleCard } from "@/components/ArticleCard/ArticleCard";
-import { Header } from "@/components/Header/Header";
-import { ScrollDown } from "@/components/ScrollDown/ScrollDown";
-import { SearchInput } from "@/components/SearchInput/SearchInput";
-import { SkeletonArticleCard } from "@/components/SkeletonArticleCard/SkeletonArticleCard";
+import { ArticleCard } from "@/components/ArticleCard";
+import { Header } from "@/components/Header";
+import { ScrollDown } from "@/components/ScrollDown";
+import { SearchInput } from "@/components/SearchInput";
+import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
 // Get posts
 import { useArticles } from "@/utils/getArticles";

@@ -2,7 +2,7 @@
 
 // Custom components
 import { RichTextComponents } from "@/components/RichTextComponents/RichTextComponents";
-import { Spinner } from "@/components/Spinner/Spinner";
+import { Spinner } from "@/components/Spinner";
 
 // Get articles
 import { useArticlesSlug } from "@/utils/getArticleSlug";

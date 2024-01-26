@@ -1,16 +1,18 @@
 "use client";
 
 // Custom components
-import { Header } from "@/components/Header/Header";
-import { PostCard } from "@/components/PostCard/PostCard";
-import { ScrollDown } from "@/components/ScrollDown/ScrollDown";
-import { SkeletonPostCard } from "@/components/SkeletonPostCard/SkeletonPostCard";
+import { Header } from "@/components/Header";
+import { PostCard } from "@/components/PostCard";
+import { ScrollDown } from "@/components/ScrollDown";
+import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 
 // Get posts
 import { usePosts } from "@/utils/getPosts";
 
 // Portable text
 import { PortableText } from "@portabletext/react";
+
+// Next
 import Link from "next/link";
 
 export default function Posts() {
