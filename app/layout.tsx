@@ -34,7 +34,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container md:px-40 lg:px-52 xl:px-60 [animation:linear_reveal_both] [animation-range:entry_5%_cover_30%] [animation-timeline:view()] py-10">
+          <div className="container md:px-40 lg:px-52 xl:px-60 py-10">
             <NextTopLoader color="#6d28d9" />
             {children}
           </div>
