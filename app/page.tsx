@@ -1,5 +1,6 @@
 // Modules
 import { Home } from "@/app/modules/Home/Home";
+import { Footer } from "@/components/Footer";
 import { LatestArticles } from "./modules/LatestArticles/LatestArticles";
 import { LatestPosts } from "./modules/LatestPosts/LatestPosts";
 
@@ -13,6 +14,7 @@ export default function HomePage() {
       <LatestArticles />
       <Separator />
       <LatestPosts />
+      <Footer />
     </main>
   );
 }

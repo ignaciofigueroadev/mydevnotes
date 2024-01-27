@@ -1,6 +1,7 @@
 "use client";
 
 // Custom components
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PostCard } from "@/components/PostCard";
 import { ScrollDown } from "@/components/ScrollDown";
@@ -46,6 +47,7 @@ export default function Posts() {
             </div>
           </div>
         </section>
+        <Footer />
       </>
     );
   }
@@ -89,6 +91,7 @@ export default function Posts() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { useState } from "react";
 
 // Custom components
 import { ArticleCard } from "@/components/ArticleCard";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ScrollDown } from "@/components/ScrollDown";
 import { SearchInput } from "@/components/SearchInput";
@@ -45,6 +46,7 @@ export default function AllArticles() {
             <SkeletonArticleCard />
           </section>
         </div>
+        <Footer />
       </>
     );
   }
@@ -103,6 +105,7 @@ export default function AllArticles() {
           )}
         </div>
       </section>
+      <Footer />
     </>
   );
 }
