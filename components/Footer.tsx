@@ -59,7 +59,9 @@ export function Footer() {
                 <DialogContent>
                   <DialogHeader>
                     <DialogTitle>My Dev Notes</DialogTitle>
-                    <DialogDescription>A blog</DialogDescription>
+                    <DialogDescription>
+                      I&apos;m developing this part of the code.
+                    </DialogDescription>
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
@@ -74,7 +76,7 @@ export function Footer() {
                   <DialogHeader>
                     <DialogTitle>Contact</DialogTitle>
                     <DialogDescription>
-                      You can hit me up in any of these social medias!
+                      I&apos;m developing this part of the code.
                     </DialogDescription>
                   </DialogHeader>
                 </DialogContent>
