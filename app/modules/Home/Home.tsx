@@ -14,7 +14,7 @@ export function Home() {
           <h1 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text">
             My Dev Notes
           </h1>
-          <p>
+          <p className="text-xs lg:text-lg">
             A blog built by a{" "}
             <span className="bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text">
               developer

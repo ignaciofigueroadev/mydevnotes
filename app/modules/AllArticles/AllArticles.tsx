@@ -32,7 +32,7 @@ export default function AllArticles() {
             <h3 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
               Articles
             </h3>
-            <p>
+            <p className="text-xs lg:text-lg">
               In this section you are going to find articles about tech and
               coding. Check them!
             </p>
@@ -67,7 +67,7 @@ export default function AllArticles() {
           <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
             Articles
           </h3>
-          <p>
+          <p className="text-xs lg:text-lg">
             In this section you are going to find articles about tech and
             coding. Check them!
           </p>

@@ -30,7 +30,7 @@ export default function Posts() {
                 <h3 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
                   Posts
                 </h3>
-                <p>
+                <p className="text-xs lg:text-lg">
                   In this section you are going to find quick posts as tips and
                   advices.
                 </p>
@@ -66,7 +66,7 @@ export default function Posts() {
               <h3 className="font-bold text-6xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
                 Posts
               </h3>
-              <p>
+              <p className="text-xs lg:text-lg">
                 In this section you are going to find quick posts as tips and
                 advices.
               </p>
