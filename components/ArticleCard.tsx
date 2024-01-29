@@ -103,7 +103,7 @@ export function ArticleCard({
               </Avatar>
               <p className="text-xs">{author}</p>
             </div>
-            <div className="flex gap-2 text-xs">
+            <div className="flex flex-wrap gap-2 text-xs">
               {categoryData && categoryData.length > 0
                 ? categoryData.map((category, index) => (
                     <Badge variant="chip" key={index}>
