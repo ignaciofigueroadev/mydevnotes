@@ -22,7 +22,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="py-8 flex flex-col gap-5">
+    <footer className="flex flex-col gap-5">
       <Separator />
       <div className="flex flex-col md:flex-row gap-4 justify-between">
         <div className="flex flex-col gap-3 w-96">
