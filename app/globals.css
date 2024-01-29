@@ -95,14 +95,14 @@
 .post-fade {
   animation: linear fade both;
   -webkit-animation: linear fade both;
-  animation-range: entry 30% cover 15%;
+  animation-range: entry 5% cover 35%;
   animation-timeline: view();
 }
 
 .article-fade {
   animation: linear fade both;
   -webkit-animation: linear fade both;
-  animation-range: entry 15% cover 30%;
+  animation-range: entry 5% cover 35%;
   animation-timeline: view();
 }
 
