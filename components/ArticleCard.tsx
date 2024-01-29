@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 // Shadcs/ui components
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -8,6 +12,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Badge } from "./ui/badge";
 
 // Icon
 import { ArrowUpRight } from "lucide-react";
@@ -15,8 +20,26 @@ import { ArrowUpRight } from "lucide-react";
 // Next imports
 import Link from "next/link";
 
-// Types
-import { ArticleTypes } from "@/types/article.types";
+// Sanityi
+import { client } from "@/sanity/lib/client";
+import { groq } from "next-sanity";
+
+interface ArticleCardProps {
+  author?: string;
+  author_image?: string;
+  title?: string;
+  publishedAt: string;
+  description?: string;
+  slug?: {
+    current: string;
+  };
+  className?: string;
+  alt?: string;
+  categories?: {
+    _ref: any;
+    title?: string;
+  }[];
+}
 
 export function ArticleCard({
   author,
@@ -27,7 +50,24 @@ export function ArticleCard({
   slug,
   className,
   alt,
-}: ArticleTypes) {
+  categories,
+}: ArticleCardProps) {
+  const [categoryData, setCategoryData] = useState<{ title?: string }[]>([]);
+
+  useEffect(() => {
+    const fetchCategoryData = async () => {
+      if (categories) {
+        const categoryDetails = await Promise.all(
+          categories.map((categoryRef) =>
+            client.fetch(groq`*[_id == $id][0]`, { id: categoryRef._ref })
+          )
+        );
+        setCategoryData(categoryDetails);
+      }
+    };
+    fetchCategoryData();
+  }, [categories]);
+
   const originalDate = new Date(publishedAt);
   const formattedDate = originalDate.toLocaleDateString();
 
@@ -55,7 +95,7 @@ export function ArticleCard({
               {description}
             </CardDescription>
           </CardContent>
-          <CardFooter className="flex flex-col items-start gap-5 md:flex-row md:items-center md:justify-between">
+          <CardFooter className="flex flex-col items-start gap-5 md:flex-col  md:justify-between">
             <div className="flex items-center gap-3">
               <Avatar>
                 <AvatarImage src={author_image} alt={alt} />
@@ -63,13 +103,15 @@ export function ArticleCard({
               </Avatar>
               <p className="text-xs">{author}</p>
             </div>
-            {/* //TODO: Create the categories feature below */}
-            {/* <div className="flex flex-wrap gap-2">
-            <Badge variant={"purple"}>Frontend</Badge>
-            <Badge variant={"purple"}>Coding</Badge>
-            <Badge variant={"purple"}>Web Development</Badge>
-            <Badge variant={"purple"}>Programming</Badge>
-          </div> */}
+            <div className="flex gap-2 text-xs">
+              {categoryData && categoryData.length > 0
+                ? categoryData.map((category, index) => (
+                    <Badge variant="chip" key={index}>
+                      {category.title || "No title"}
+                    </Badge>
+                  ))
+                : null}
+            </div>
           </CardFooter>
         </div>
       </Card>

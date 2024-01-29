@@ -59,6 +59,8 @@ export default function AllArticles() {
     article.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  console.log(articles);
+
   return (
     <>
       <Header />
@@ -99,6 +101,7 @@ export default function AllArticles() {
                   author_image={article.author_image}
                   slug={article.slug}
                   alt={article.author}
+                  categories={article.categories}
                 />
               </div>
             ))

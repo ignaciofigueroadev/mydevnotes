@@ -54,6 +54,7 @@ export function LatestArticles() {
               author={article.author}
               author_image={article.author_image}
               alt={article.author}
+              categories={article.categories}
             />
           </div>
         ))}

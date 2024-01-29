@@ -10,4 +10,8 @@ export type ArticleTypes = {
   publishedAt: string;
   className?: string;
   alt: string;
+  categories?: {
+    _ref: any;
+    title?: string;
+  }[];
 };
