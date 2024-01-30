@@ -5,7 +5,7 @@ import { RichTextComponents } from "@/components/RichTextComponents/RichTextComp
 import { Spinner } from "@/components/Spinner";
 
 // Get articles
-import { useArticlesSlug } from "@/utils/useArticleSlug";
+import { useArticlesSlug } from "@/hooks/useArticleSlug";
 
 // Utils
 import { PortableText } from "@portabletext/react";
