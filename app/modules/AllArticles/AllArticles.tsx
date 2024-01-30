@@ -11,7 +11,7 @@ import { SearchInput } from "@/components/SearchInput";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
 // Get posts
-import { useArticles } from "@/utils/useArticles";
+import { useArticles } from "@/hooks/useArticles";
 
 // Types
 import { ArticleTypes } from "@/types/article.types";

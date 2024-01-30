@@ -23,7 +23,7 @@ export function MobileMenu() {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="">
+      <SheetContent side="left">
         <ul className="flex flex-col gap-14 pt-32 mw-screen py-10 pl-8 items-end md:w-full md:min-h-0 text-2xl">
           <li className="hover:opacity-70 duration-100 ease-out transition-opacity">
             <Link

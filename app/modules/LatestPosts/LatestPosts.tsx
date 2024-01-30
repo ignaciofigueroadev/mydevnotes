@@ -5,7 +5,7 @@ import { PostCard } from "@/components/PostCard";
 import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 
 // Get articles
-import { usePosts } from "@/utils/usePosts";
+import { usePosts } from "@/hooks/usePosts";
 
 // Types
 import { PortableText } from "@portabletext/react";
