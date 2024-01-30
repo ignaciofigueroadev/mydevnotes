@@ -54,7 +54,7 @@ export function Footer() {
               <LucideShieldQuestion size={18} />
               <Dialog>
                 <DialogTrigger>
-                  <button>About</button>
+                  <a>About</a>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
@@ -70,7 +70,7 @@ export function Footer() {
               <Contact2 size={18} />
               <Dialog>
                 <DialogTrigger>
-                  <button>Contact me</button>
+                  <a>Contact me</a>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
