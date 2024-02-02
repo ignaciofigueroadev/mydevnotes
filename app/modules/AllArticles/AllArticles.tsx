@@ -14,7 +14,6 @@ import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 import { useArticles } from "@/hooks/useArticles";
 
 // Types
-import { ArticleFilter } from "@/components/ArticleFilter";
 import { ArticleTypes } from "@/types/article.types";
 
 // Next
@@ -82,7 +81,6 @@ export default function AllArticles() {
         </div>
         <div className="flex items-center gap-4">
           <ArticleSearch onSearch={setSearchTerm} />
-          <ArticleFilter />
         </div>
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4 justify-center items-center"
