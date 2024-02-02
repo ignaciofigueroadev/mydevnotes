@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-// Shadcs/ui components
+// Shadcn/ui components
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Card,
@@ -20,7 +20,7 @@ import { ArrowUpRight } from "lucide-react";
 // Next imports
 import Link from "next/link";
 
-// Sanityi
+// Sanity
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 
@@ -107,7 +107,7 @@ export function ArticleCard({
               {categoryData && categoryData.length > 0
                 ? categoryData.map((category, index) => (
                     <Badge variant="chip" key={index}>
-                      {category.title || "No title"}
+                      {category.title || null}
                     </Badge>
                   ))
                 : null}
