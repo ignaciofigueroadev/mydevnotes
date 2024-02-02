@@ -4,10 +4,11 @@ import { useState } from "react";
 
 // Custom components
 import { ArticleCard } from "@/components/ArticleCard";
+import { ArticleFilter } from "@/components/ArticleFilter";
+import { ArticleSearch } from "@/components/ArticleSearch";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ScrollDown } from "@/components/ScrollDown";
-import { SearchInput } from "@/components/SearchInput";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
 // Get posts
@@ -38,7 +39,10 @@ export default function AllArticles() {
             </p>
             <ScrollDown />
           </div>
-          <SearchInput onSearch={setSearchTerm} />
+          <div className="flex">
+            <ArticleSearch onSearch={setSearchTerm} />
+            <ArticleFilter />
+          </div>
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
             <SkeletonArticleCard />
             <SkeletonArticleCard />
@@ -77,8 +81,9 @@ export default function AllArticles() {
             <ScrollDown />
           </Link>
         </div>
-        <div className="flex items-center gap-4">
-          <SearchInput onSearch={setSearchTerm} />
+        <div className="flex items-center justify-between gap-4">
+          <ArticleSearch onSearch={setSearchTerm} />
+          <ArticleFilter />
         </div>
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4 justify-center items-center"
