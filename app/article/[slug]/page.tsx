@@ -1,7 +1,7 @@
 "use client";
 
 // Custom components
-import SkeletonArticleDetails from "@/app/modules/Skeletons/SkeletonArticleDetails";
+import { SkeletonArticleDetails } from "@/app/modules/Skeletons/SkeletonArticleDetails";
 import { RichTextComponents } from "@/components/RichTextComponents/RichTextComponents";
 
 // Get articles

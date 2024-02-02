@@ -1,6 +1,6 @@
 import { Skeleton } from "@/components/ui/skeleton";
 
-export default function SkeletonArticleDetails() {
+export function SkeletonArticleDetails() {
   return (
     <div className="flex flex-col gap-4 pt-12">
       <Skeleton className="w-1/2 h-5 rounded-full bg-gray-300 dark:bg-gray-700" />
