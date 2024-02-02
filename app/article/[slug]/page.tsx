@@ -1,8 +1,8 @@
 "use client";
 
 // Custom components
+import SkeletonArticleDetails from "@/app/modules/Skeletons/SkeletonArticleDetails";
 import { RichTextComponents } from "@/components/RichTextComponents/RichTextComponents";
-import { Spinner } from "@/components/Spinner";
 
 // Get articles
 import { useArticlesSlug } from "@/hooks/useArticleSlug";
@@ -19,7 +19,7 @@ export default function ArticlePage({ params }: Props) {
   const { article, isError, isLoading } = useArticlesSlug(slug);
 
   if (isLoading) {
-    return <Spinner />;
+    return <SkeletonArticleDetails />;
   }
 
   if (isError) {
