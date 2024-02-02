@@ -4,7 +4,6 @@ import { useState } from "react";
 
 // Custom components
 import { ArticleCard } from "@/components/ArticleCard";
-import { ArticleFilter } from "@/components/ArticleFilter";
 import { ArticleSearch } from "@/components/ArticleSearch";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -15,6 +14,7 @@ import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 import { useArticles } from "@/hooks/useArticles";
 
 // Types
+import { ArticleFilter } from "@/components/ArticleFilter";
 import { ArticleTypes } from "@/types/article.types";
 
 // Next
@@ -41,7 +41,6 @@ export default function AllArticles() {
           </div>
           <div className="flex">
             <ArticleSearch onSearch={setSearchTerm} />
-            <ArticleFilter />
           </div>
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-7">
             <SkeletonArticleCard />
@@ -81,7 +80,7 @@ export default function AllArticles() {
             <ScrollDown />
           </Link>
         </div>
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center gap-4">
           <ArticleSearch onSearch={setSearchTerm} />
           <ArticleFilter />
         </div>

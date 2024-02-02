@@ -1,3 +1,7 @@
+"use client";
+
+import { useCategories } from "@/hooks/useCategories";
+
 // Shadcn/ui components
 import {
   DropdownMenu,
@@ -11,6 +15,12 @@ import { Filter } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function ArticleFilter() {
+  const { categories, isLoadingCategory } = useCategories();
+
+  if (isLoadingCategory) {
+    return <div>Loading categories...</div>;
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -21,10 +31,9 @@ export function ArticleFilter() {
       <DropdownMenuContent>
         <DropdownMenuLabel>Filter by category</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>Frontend</DropdownMenuItem>
-        <DropdownMenuItem>Backend</DropdownMenuItem>
-        <DropdownMenuItem>UX/UI</DropdownMenuItem>
-        <DropdownMenuItem>Machine Learning</DropdownMenuItem>
+        {categories.map((category, index) => (
+          <DropdownMenuItem key={index}>{category.title}</DropdownMenuItem>
+        ))}
       </DropdownMenuContent>
     </DropdownMenu>
   );
