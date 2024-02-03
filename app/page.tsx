@@ -1,8 +1,8 @@
 // Modules
-import { Home } from "@/app/modules/Home/Home";
+import { Home } from "@/app/modules/Home";
 import { Footer } from "@/components/Footer";
-import { LatestArticles } from "./modules/LatestArticles/LatestArticles";
-import { LatestPosts } from "./modules/LatestPosts/LatestPosts";
+import { LatestArticles } from "./modules/LatestArticles";
+import { LatestPosts } from "./modules/LatestPosts";
 
 // Shadcn/ui components
 import { Separator } from "@/components/ui/separator";
