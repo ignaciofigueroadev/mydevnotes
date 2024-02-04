@@ -95,7 +95,7 @@ export function ArticleCard({
               {description}
             </CardDescription>
           </CardContent>
-          <CardFooter className="flex flex-col items-start gap-5 md:flex-col  md:justify-between">
+          <CardFooter className="flex flex-col items-start gap-5 md:flex-col md:justify-between">
             <div className="flex items-center gap-3">
               <Avatar>
                 <AvatarImage src={author_image} alt={alt} />
