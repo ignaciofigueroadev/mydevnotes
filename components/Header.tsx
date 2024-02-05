@@ -24,11 +24,11 @@ export function Header() {
           <ToggleThemeButton />
         </div>
         <nav className="hidden lg:block">
-          <ul className="flex flex-col gap-6 w-screen items-center md:w-full md:flex-row md:min-h-0 border rounded-full px-2 py-2">
+          <ul className="flex flex-col gap-6 w-screen items-center md:w-full md:flex-row md:min-h-0 border rounded-full p-1">
             <li>
               <Link
                 href="/"
-                className={`flex gap-2 hover:bg-indigo-400 hover:text-white py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
+                className={`flex gap-1 hover:bg-indigo-400 hover:text-white py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
                   pathname === "/" ? "bg-indigo-400 text-white" : ""
                 }`}
               >
@@ -39,7 +39,7 @@ export function Header() {
             <li>
               <Link
                 href="/posts"
-                className={`flex gap-2 hover:bg-fuchsia-600 hover:text-white py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
+                className={`flex gap-1 hover:bg-fuchsia-600 hover:text-white py-3 px-4 rounded-full justify-center items-center cursor-default duration-150 ${
                   pathname === "/posts" ? "bg-fuchsia-600 text-white" : ""
                 }`}
               >
