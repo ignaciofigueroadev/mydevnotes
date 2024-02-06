@@ -61,8 +61,6 @@ export default function AllArticles() {
     article.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  console.log(articles);
-
   return (
     <>
       <Header />
