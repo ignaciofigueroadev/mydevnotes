@@ -10,13 +10,15 @@ import {
 } from "@/components/ui/tooltip";
 import { Input } from "./ui/input";
 
-export function ArticleSearch({
-  onSearch,
-}: {
-  onSearch: (value: string) => void;
-}) {
+interface ArticleSearchProps {
+  onSearch?: (value: string) => void;
+}
+
+export function ArticleSearch({ onSearch }: ArticleSearchProps) {
   const handleSearch = (event: ChangeEvent<HTMLInputElement>) => {
-    onSearch(event.target.value);
+    if (onSearch) {
+      onSearch(event.target.value);
+    }
   };
 
   return (
