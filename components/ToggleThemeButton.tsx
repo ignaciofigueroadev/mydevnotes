@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 
 // shadcn/ui components
 import { Button } from "@/components/ui/button";
+import { Separator } from "./ui/separator";
 
 import {
   DropdownMenu,
@@ -28,7 +29,7 @@ export function ToggleThemeButton() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="flex flex-col gap-3">
+      <DropdownMenuContent align="end" className="flex flex-col gap-1">
         <DropdownMenuItem
           onClick={() => setTheme("light")}
           className="flex justify-between"
@@ -43,6 +44,7 @@ export function ToggleThemeButton() {
           <Moon />
           Dark
         </DropdownMenuItem>
+        <Separator />
         <DropdownMenuItem
           onClick={() => setTheme("system")}
           className="flex justify-between"
