@@ -2,7 +2,7 @@
 
 // Custom components
 import { SkeletonArticleDetails } from "@/app/modules/Skeletons/SkeletonArticleDetails";
-import { RichTextComponents } from "@/components/RichTextComponents/RichTextComponents";
+import { RichTextComponents } from "@/components/RichTextComponents";
 
 // Get articles
 import { useArticlesSlug } from "@/hooks/useArticleSlug";
