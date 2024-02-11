@@ -42,7 +42,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container md:px-40 lg:px-52 xl:px-60 py-6">
+          <div className="container min-h-screen md:px-40 py-6 mx-auto">
             <NextTopLoader color="#6d28d9" />
             {children}
           </div>

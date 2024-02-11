@@ -38,7 +38,7 @@ export function PostCard({
           </CardTitle>
         </CardContent>
         <CardFooter>
-          <CardDescription className="flex flex-col gap-3 text-black dark:text-white">
+          <CardDescription className="flex flex-col gap-3 text-black dark:text-white ">
             {description}
           </CardDescription>
           <div className="w-full flex justify-end items-center text-xs">

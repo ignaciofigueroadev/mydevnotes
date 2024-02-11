@@ -102,19 +102,19 @@
 .article-fade {
   animation: linear fade both;
   -webkit-animation: linear fade both;
-  animation-range: entry 5% cover 35%;
+  animation-range: entry 10% cover 45%;
   animation-timeline: view();
 }
 
 @keyframes fade {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.9);
     scale-webkit-transform: scale;
-    -moz-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    -o-transform: scale(0.95);
-    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
   }
   to {
     opacity: 1;
