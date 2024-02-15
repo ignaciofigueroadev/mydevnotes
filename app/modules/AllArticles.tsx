@@ -8,7 +8,7 @@ import { ArticleSearch } from "@/components/ArticleSearch";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ScrollDown } from "@/components/ScrollDown";
-import SkeletonAllArticles from "./Skeletons/SkeletonAllArticles";
+import { SkeletonAllArticles } from "./Skeletons/SkeletonAllArticles";
 
 // Get posts
 import { useArticles } from "@/hooks/useArticles";

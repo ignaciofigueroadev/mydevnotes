@@ -7,7 +7,7 @@ import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 // Next
 import Link from "next/link";
 
-export default function SkeletonAllPosts() {
+export function SkeletonAllPosts() {
   return (
     <>
       <Header />

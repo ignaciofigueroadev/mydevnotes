@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PostCard } from "@/components/PostCard";
 import { ScrollDown } from "@/components/ScrollDown";
-import SkeletonAllPosts from "./Skeletons/SkeletonAllPosts";
+import { SkeletonAllPosts } from "./Skeletons/SkeletonAllPosts";
 
 // Get posts
 import { usePosts } from "@/hooks/usePosts";

@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { ScrollDown } from "@/components/ScrollDown";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
-export default function SkeletonAllArticles() {
+export function SkeletonAllArticles() {
   return (
     <>
       <Header />
