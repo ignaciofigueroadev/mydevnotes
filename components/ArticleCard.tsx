@@ -91,7 +91,7 @@ export function ArticleCard({
             <CardTitle className="group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:via-fuchsia-700 group-hover:to-violet-400 group-hover:inline-block group-hover:text-transparent group-hover:bg-clip-text text-pretty text-lg">
               {title}
             </CardTitle>
-            <CardDescription className="leading-10 text-pretty text-xs">
+            <CardDescription className="leading-10 text-pretty text-sm">
               {description}
             </CardDescription>
           </CardContent>
