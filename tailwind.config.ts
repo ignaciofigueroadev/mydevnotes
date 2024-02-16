@@ -19,10 +19,10 @@ const config = {
     },
     extend: {
       backgroundImage: (theme) => ({
-        "radial-gradient-left":
+        "radial-gradient-desktop":
           "radial-gradient(ellipse 50% 100% at 30% -20%, rgba(147, 51, 234, 0.3), rgba(255, 255, 255, 0))",
-        "radial-gradient-right":
-          "radial-gradient(ellipse 50% 100% at 70% 120%, rgba(147, 51, 234, 0.3), rgba(255, 255, 255, 0))",
+        "radial-gradient-mobile":
+          "radial-gradient(ellipse 100% 80% at 20% -20%, rgba(147, 51, 234, 0.3), rgba(255, 255, 255, 0))",
       }),
       boxShadow: {
         "dark-box-shadow-card": "10px 10px 0px rgb(147, 51, 234)",

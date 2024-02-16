@@ -42,7 +42,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-radial-gradient-left"></div>
+          <div className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-radial-gradient-mobile lg:bg-radial-gradient-desktop"></div>
           <div className="container min-h-screen md:px-40 py-6 mx-auto">
             <NextTopLoader color="#6d28d9" />
             {children}
