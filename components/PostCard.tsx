@@ -30,15 +30,15 @@ export function PostCard({
     >
       <div className="shadow-dark-box-shadow-card rounded-md">
         <CardHeader className="flex flex-row justify-end items-center">
-          <QuoteIcon />
+          <QuoteIcon className="text-gray-300 w-7 h-7" />
         </CardHeader>
         <CardContent className="flex flex-col gap-5">
-          <CardTitle className="text-lg leading-8 font-bold opacity-75">
+          <CardTitle className="text-1xl lg:text-4xl font-bold opacity-75">
             {title}
           </CardTitle>
         </CardContent>
         <CardFooter>
-          <CardDescription className="flex flex-col gap-3 text-black dark:text-white ">
+          <CardDescription className="flex flex-col gap-3 text-black dark:text-white text-sm">
             {description}
           </CardDescription>
           <div className="w-full flex justify-end items-center text-xs">
