@@ -14,6 +14,7 @@ export function ToggleThemeButton() {
         variant="outline"
         size="icon"
         onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+        className="bg-transparent"
       >
         {theme === "dark" ? (
           <>
