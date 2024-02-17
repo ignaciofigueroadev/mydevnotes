@@ -12,19 +12,20 @@ import Link from "next/link";
 
 // Icons
 import { FileText, HomeIcon, MessageSquare } from "lucide-react";
+import { Logo } from "./Logo";
 
 export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex items-center justify-between sticky top-0 left-0 z-10 pt-3">
       <div className="flex gap-9 items-center justify-between lg:justify-normal w-screen">
         <div className="flex items-center justify-between w-full gap-6 lg:hidden relative inset-0">
+          <Logo />
           <MobileMenu />
-          <ToggleThemeButton />
         </div>
         <nav className="hidden lg:block">
-          <ul className="flex flex-col gap-7 w-screen items-center md:w-full md:flex-row md:min-h-0 rounded-full p-1">
+          <ul className="flex flex-col bg-card p-2 gap-5 w-screen items-center md:w-full md:flex-row md:min-h-0 rounded-full">
             <li>
               <Link
                 href="/"
@@ -58,11 +59,14 @@ export function Header() {
                 Articles
               </Link>
             </li>
+            <li>
+              <ToggleThemeButton />
+            </li>
           </ul>
         </nav>
       </div>
       <div className="hidden lg:block">
-        <ToggleThemeButton />
+        <Logo />
       </div>
     </header>
   );

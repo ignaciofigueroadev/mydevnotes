@@ -12,6 +12,7 @@ import Link from "next/link";
 
 // Next hooks
 import { usePathname } from "next/navigation";
+import { ToggleThemeButton } from "./ToggleThemeButton";
 
 export function MobileMenu() {
   const pathname = usePathname();
@@ -60,6 +61,9 @@ export function MobileMenu() {
             >
               Articles
             </Link>
+          </li>
+          <li>
+            <ToggleThemeButton />
           </li>
         </ul>
       </SheetContent>

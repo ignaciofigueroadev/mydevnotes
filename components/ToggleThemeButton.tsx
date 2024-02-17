@@ -11,10 +11,9 @@ export function ToggleThemeButton() {
   return (
     <div className="flex items-center">
       <Button
-        variant="outline"
+        variant="ghost"
         size="icon"
         onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
-        className="bg-transparent"
       >
         {theme === "dark" ? (
           <>
