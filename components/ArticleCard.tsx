@@ -78,7 +78,7 @@ export function ArticleCard({
     >
       <Card
         className={
-          "group hover:border-purple-600 border-[.0625rem] transition-[border, translate] duration-100 flex-1 article-fade shadow-md hover:shadow-lg bg-transparent"
+          "group hover:border-purple-600 border-[.0625rem] transition-[border, translate] duration-100 flex-1 article-fade shadow-md hover:shadow-lg"
         }
       >
         <div className="hover:shadow-dark-box-shadow-card rounded-md">
