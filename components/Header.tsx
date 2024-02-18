@@ -21,11 +21,11 @@ export function Header() {
     <header className="flex items-center justify-between sticky top-0 left-0 z-10 pt-3">
       <div className="flex gap-9 items-center justify-between lg:justify-normal w-screen">
         <div className="flex items-center justify-between w-full gap-6 lg:hidden relative inset-0">
-          <Logo />
           <MobileMenu />
+          <Logo />
         </div>
         <nav className="hidden lg:block">
-          <ul className="flex flex-col bg-card p-2 gap-5 w-screen items-center md:w-full md:flex-row md:min-h-0 rounded-full">
+          <ul className="flex flex-col p-2 gap-5 w-screen items-center md:w-full md:flex-row md:min-h-0">
             <li>
               <Link
                 href="/"
