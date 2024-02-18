@@ -11,7 +11,7 @@ export function Home() {
       <Header />
       <section className="flex flex-col gap-8 justify-center items-center text-center min-h-[60vh]">
         <div>
-          <h1 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text">
+          <h1 className="font-bold text-5xl lg:text-8xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text">
             My Dev Notes
           </h1>
           <p className="text-xs lg:text-lg">
