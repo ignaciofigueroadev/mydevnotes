@@ -1,5 +1,6 @@
 // Custom components
 import { BackButton } from "@/components/BackButton";
+import { Logo } from "@/components/Logo";
 
 // Metadata
 import type { Metadata } from "next";
@@ -17,6 +18,7 @@ export default function ArticleDetailsLayout({
   return (
     <section>
       <BackButton title="Go Back" />
+      <Logo />
       {children}
     </section>
   );

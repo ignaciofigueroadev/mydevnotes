@@ -18,7 +18,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between sticky top-0 left-0 z-10 pt-3">
+    <header className="flex items-center justify-between pt-3">
       <div className="flex gap-9 items-center justify-between lg:justify-normal w-screen">
         <div className="flex items-center justify-between w-full gap-6 lg:hidden relative inset-0">
           <MobileMenu />
