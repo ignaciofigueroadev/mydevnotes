@@ -17,8 +17,10 @@ export default function ArticleDetailsLayout({
 }) {
   return (
     <section>
-      <BackButton title="Go Back" />
-      <Logo />
+      <div className="flex justify-between items-center">
+        <BackButton title="Go Back" />
+        <Logo />
+      </div>
       {children}
     </section>
   );

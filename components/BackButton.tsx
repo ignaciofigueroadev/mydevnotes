@@ -17,8 +17,8 @@ export function BackButton({ title }: GoBackProps) {
   const router = useRouter();
   return (
     <Button
-      variant={"ghost"}
-      className="flex gap-2"
+      variant={"default"}
+      className="flex items-center gap-1"
       onClick={() => router.back()}
     >
       <ArrowLeft />
