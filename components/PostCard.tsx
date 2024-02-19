@@ -26,26 +26,24 @@ export function PostCard({
 }: PostCardProps) {
   return (
     <Card
-      className={`w-full h-full ${className} border-[1px] border-purple-800 post-fade`}
+      className={`w-full h-full ${className} border-[1px] border-purple-800 post-fade flex flex-col justify-between`}
     >
-      <div className="shadow-dark-box-shadow-card rounded-md">
-        <CardHeader className="flex flex-row justify-end items-center">
-          <QuoteIcon className="text-gray-300 w-7 h-7" />
-        </CardHeader>
-        <CardContent className="flex flex-col gap-5">
-          <CardTitle className="text-1xl lg:text-4xl font-bold opacity-75">
-            {title}
-          </CardTitle>
-        </CardContent>
-        <CardFooter>
-          <CardDescription className="flex flex-col gap-3 text-black dark:text-white text-sm">
-            {description}
-          </CardDescription>
-          <div className="w-full flex justify-end items-center text-xs">
-            {author}
-          </div>
-        </CardFooter>
-      </div>
+      <CardHeader className="flex flex-row justify-end items-center">
+        <QuoteIcon className="w-7 h-7" />
+      </CardHeader>
+      <CardContent className="flex flex-col gap-5">
+        <CardTitle className="text-1xl lg:text-2xl font-bold opacity-75">
+          {title}
+        </CardTitle>
+      </CardContent>
+      <CardFooter>
+        <CardDescription className="flex flex-col gap-3 text-black dark:text-white text-sm">
+          {description}
+        </CardDescription>
+        <div className="w-full flex justify-end items-center text-xs">
+          {author}
+        </div>
+      </CardFooter>
     </Card>
   );
 }

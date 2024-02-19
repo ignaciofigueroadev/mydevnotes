@@ -43,7 +43,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="fixed top-0 bottom-0 z-[-2] min-h-screen w-full bg-radial-gradient-mobile lg:bg-radial-gradient-desktop"></div>
-          <div className="container min-h-screen md:px-40 py-6 mx-auto">
+          <div className="container min-h-screen lg:px-52 py-6 mx-auto">
             <NextTopLoader color="#6d28d9" />
             {children}
           </div>

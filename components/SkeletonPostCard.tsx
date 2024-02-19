@@ -8,9 +8,13 @@ import {
 } from "@/components/ui/card";
 import { Skeleton } from "./ui/skeleton";
 
-export function SkeletonPostCard() {
+interface SkeletonPostCardProps {
+  className?: string;
+}
+
+export function SkeletonPostCard({ className }: SkeletonPostCardProps) {
   return (
-    <Card className="flex flex-col border-[.0625rem] ">
+    <Card className={`flex flex-col border-[.0625rem] ${className}`}>
       <div className="shadow-[10px_10px_0_rgb(209_213_219)] dark:shadow-gray-700 rounded-md">
         <CardHeader className="flex items-end">
           <Skeleton className="h-4 w-4 rounded-md bg-gray-300 dark:bg-gray-700" />

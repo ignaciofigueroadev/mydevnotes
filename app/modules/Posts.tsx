@@ -1,7 +1,6 @@
 "use client";
 
 // Custom components
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PostCard } from "@/components/PostCard";
 import { ScrollDown } from "@/components/ScrollDown";
@@ -14,6 +13,7 @@ import { usePosts } from "@/hooks/usePosts";
 import { PortableText } from "@portabletext/react";
 
 // Next
+import { Footer } from "@/components/Footer";
 import Link from "next/link";
 
 export default function Posts() {
@@ -47,11 +47,16 @@ export default function Posts() {
             </Link>
           </div>
           <div
-            className="grid gap-10 grid-cols-1 justify-center items-center pt-10"
+            className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center pt-10"
             id="posts"
           >
-            {posts.map((post: any) => (
-              <div key={post._id}>
+            {posts.map((post: any, i: number) => (
+              <div
+                key={i}
+                className={`${
+                  i === 3 || i === 6 ? "lg:col-span-2" : ""
+                } h-full`}
+              >
                 <PostCard
                   title={post.title}
                   description={<PortableText value={post.body} />}

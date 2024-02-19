@@ -27,11 +27,14 @@ export function SkeletonAllPosts() {
               <ScrollDown />
             </Link>
           </div>
-          <div className="grid gap-10 grid-cols-1 justify-center items-center pt-10">
+          <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center pt-10">
             <SkeletonPostCard />
             <SkeletonPostCard />
             <SkeletonPostCard />
+            <SkeletonPostCard className="lg:col-span-2" />
             <SkeletonPostCard />
+            <SkeletonPostCard />
+            <SkeletonPostCard className="lg:col-span-2" />
           </div>
         </div>
       </section>
