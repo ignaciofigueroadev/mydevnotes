@@ -17,7 +17,7 @@ export function LatestPosts() {
     return (
       <section className="py-10 flex flex-col gap-6">
         <h2 className="font-bold opacity-75 text-xl">Latest Posts</h2>
-        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
           <SkeletonPostCard className="col-span-2" />
           <SkeletonPostCard />
           <SkeletonPostCard />
@@ -43,7 +43,7 @@ export function LatestPosts() {
   return (
     <section className="py-10 flex flex-col gap-6">
       <h2 className="font-bold opacity-75 text-xl">Latest Posts</h2>
-      <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
+      <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
         {firstFourPosts.map((post: any, i: number) => (
           <div
             key={i}
