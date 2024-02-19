@@ -55,7 +55,7 @@ export default function AllArticles() {
           <ArticleSearch onSearch={setSearchTerm} />
         </div>
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-4 justify-center items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-2 py-4 justify-center items-center"
           id="all-articles"
         >
           {filteredPosts.length === 0 ? (
