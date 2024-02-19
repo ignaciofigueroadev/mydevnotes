@@ -26,10 +26,10 @@ export function PostCard({
 }: PostCardProps) {
   return (
     <Card
-      className={`w-full h-full ${className} border-[1px] border-purple-800 post-fade flex flex-col justify-between`}
+      className={`w-full h-full ${className} post-fade flex flex-col justify-between `}
     >
       <CardHeader className="flex flex-row justify-end items-center">
-        <QuoteIcon className="w-7 h-7" />
+        <QuoteIcon className="w-7 h-7 text-purple-700" />
       </CardHeader>
       <CardContent className="flex flex-col gap-5">
         <CardTitle className="text-1xl lg:text-3xl text-pretty font-bold opacity-75">
