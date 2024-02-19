@@ -32,7 +32,7 @@ export function PostCard({
         <QuoteIcon className="w-7 h-7" />
       </CardHeader>
       <CardContent className="flex flex-col gap-5">
-        <CardTitle className="text-1xl lg:text-2xl font-bold opacity-75">
+        <CardTitle className="text-1xl lg:text-3xl text-pretty font-bold opacity-75">
           {title}
         </CardTitle>
       </CardContent>
