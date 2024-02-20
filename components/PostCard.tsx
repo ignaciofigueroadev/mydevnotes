@@ -25,10 +25,8 @@ export function PostCard({
   author,
 }: PostCardProps) {
   return (
-    <Card
-      className={`w-full h-full ${className} post-fade flex flex-col justify-between `}
-    >
-      <div className="shadow-dark-box-shadow-card rounded-sm h-full">
+    <Card className={`w-full h-full ${className} post-fade`}>
+      <div className="shadow-dark-box-shadow-card rounded-sm h-full flex flex-col justify-between">
         <CardHeader className="flex flex-row justify-end items-center">
           <QuoteIcon className="w-7 h-7 text-purple-700" />
         </CardHeader>
