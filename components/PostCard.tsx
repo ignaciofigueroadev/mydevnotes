@@ -26,7 +26,7 @@ export function PostCard({ title, className, author }: PostCardProps) {
           <QuoteIcon className="w-4 h-4" />
         </CardHeader>
         <CardContent className="flex flex-col gap-5">
-          <CardTitle className="text-1xl text-pretty  font-bold opacity-75">
+          <CardTitle className="text-lg lg:text-1xl text-pretty  font-bold opacity-75">
             {title}
           </CardTitle>
         </CardContent>
