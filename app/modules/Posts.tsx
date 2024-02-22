@@ -1,9 +1,18 @@
 "use client";
 
-// Custom components
+// Components
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PostCard } from "@/components/PostCard";
 import { ScrollDown } from "@/components/ScrollDown";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { SkeletonAllPosts } from "./Skeletons/SkeletonAllPosts";
 
 // Get posts
@@ -13,7 +22,6 @@ import { usePosts } from "@/hooks/usePosts";
 import { PortableText } from "@portabletext/react";
 
 // Next
-import { Footer } from "@/components/Footer";
 import Link from "next/link";
 
 export default function Posts() {
@@ -47,22 +55,27 @@ export default function Posts() {
             </Link>
           </div>
           <div
-            className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center pt-10"
+            className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10"
             id="posts"
           >
             {posts.map((post: any, i: number) => (
-              <div
-                key={i}
-                className={`${
-                  i === 3 || i === 6 ? "lg:col-span-2" : ""
-                } h-full`}
-              >
-                <PostCard
-                  title={post.title}
-                  description={<PortableText value={post.body} />}
-                  author={post.author}
-                />
-              </div>
+              <Dialog key={i}>
+                <DialogTrigger
+                  className={`${
+                    i === 3 || i === 6 ? "lg:col-span-2" : ""
+                  } h-full w-full`}
+                >
+                  <PostCard title={post.title} author={post.author} />
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>{post.title}</DialogTitle>
+                    <DialogDescription>
+                      <PortableText value={post.body} />
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
             ))}
           </div>
         </div>

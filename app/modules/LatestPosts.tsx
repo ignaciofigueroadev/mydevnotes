@@ -8,6 +8,14 @@ import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 import { usePosts } from "@/hooks/usePosts";
 
 // Types
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { PortableText } from "@portabletext/react";
 
 export function LatestPosts() {
@@ -43,18 +51,25 @@ export function LatestPosts() {
   return (
     <section className="py-10 flex flex-col gap-6">
       <h2 className="font-bold opacity-75 text-xl">Latest Posts</h2>
-      <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
+      <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {firstFourPosts.map((post: any, i: number) => (
-          <div
-            key={i}
-            className={`${i === 0 || i === 3 ? "lg:col-span-2" : ""} h-full`}
-          >
-            <PostCard
-              title={post.title}
-              author={post.author}
-              description={<PortableText value={post.body} />}
-            />
-          </div>
+          <Dialog key={i}>
+            <DialogTrigger
+              className={`${
+                i === 0 || i === 3 ? "lg:col-span-2" : ""
+              } h-full w-full`}
+            >
+              <PostCard title={post.title} author={post.author} />
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>{post.title}</DialogTitle>
+                <DialogDescription>
+                  <PortableText value={post.body} />
+                </DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
         ))}
       </div>
     </section>
