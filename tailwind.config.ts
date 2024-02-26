@@ -20,9 +20,9 @@ const config = {
     extend: {
       backgroundImage: (theme) => ({
         "radial-gradient-desktop":
-          "radial-gradient(ellipse 50% 100% at 30% -20%, rgba(147, 51, 234, 0.3), rgba(255, 255, 255, 0))",
+          "radial-gradient(ellipse 50% 100% at 5% -20%, rgba(147, 51, 234, 0.2), rgba(255, 255, 255, 0))",
         "radial-gradient-mobile":
-          "radial-gradient(ellipse 100% 80% at 20% -20%, rgba(147, 51, 234, 0.3), rgba(255, 255, 255, 0))",
+          "radial-gradient(ellipse 100% 80% at 2% -20%, rgba(147, 51, 234, 0.2), rgba(255, 255, 255, 0))",
       }),
       boxShadow: {
         "dark-box-shadow-card": "5px 5px 0px rgb(147, 51, 234)",
