@@ -11,7 +11,7 @@ export function ToggleThemeButton() {
   return (
     <div className="flex items-center">
       <Button
-        variant="ghost"
+        variant={"outline"}
         size="icon"
         onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
       >
@@ -22,7 +22,7 @@ export function ToggleThemeButton() {
           </>
         ) : (
           <>
-            <Moon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
+            <Moon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all " />
             <span className="sr-only">Switch to dark theme</span>
           </>
         )}
