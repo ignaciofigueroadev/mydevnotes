@@ -34,6 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <div className="fixed top-0 bottom-0 z-[-2] min-h-screen w-full bg-radial-gradient-mobile lg:bg-radial-gradient-desktop"></div>
       <body className={`${montserrat.className} font-montserrat`}>
         {" "}
         <ThemeProvider
@@ -42,11 +43,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="fixed top-0 bottom-0 z-[-2] min-h-screen w-full bg-radial-gradient-mobile lg:bg-radial-gradient-desktop"></div>
-          <div className="min-h-screen m-auto container py-6 w-full max-w-5xl">
+          <main className="min-h-screen py-6 m-auto container max-w-5xl flex flex-col justify-center items-center">
             <NextTopLoader color="#6d28d9" />
             {children}
-          </div>
+          </main>
         </ThemeProvider>
       </body>
     </html>
