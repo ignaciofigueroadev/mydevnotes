@@ -43,7 +43,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="min-h-screen py-6 m-auto container max-w-5xl flex flex-col justify-center items-center">
+          <main className="min-h-screen py-6 m-auto container max-w-6xl">
             <NextTopLoader color="#6d28d9" />
             {children}
           </main>
