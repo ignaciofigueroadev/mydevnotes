@@ -14,9 +14,23 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: "My Dev Notes | Home",
   description:
     "Welcome where tech meets curiosity. Quick reads on web development, fun facts, history, tips, and more.",
+  openGraph: {
+    title: "My Dev Notes | Home",
+    description:
+      "Welcome where tech meets curiosity. Quick reads on web development, fun facts, history, tips, and more.",
+    images: "/app/opengraph-image.png",
+  },
+  twitter: {
+    site: "@ignaciodev",
+    title: "My Dev Notes | Home",
+    description:
+      "Welcome where tech meets curiosity. Quick reads on web development, fun facts, history, tips, and more.",
+    images: "/app/twitter-image.png",
+  },
   keywords: [
     "Blog",
     "Developers",
@@ -34,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <div className="fixed top-0 bottom-0 z-[-2] min-h-screen w-full bg-radial-gradient-mobile lg:bg-radial-gradient-desktop"></div>
+      <div className="fixed top-0 bottom-0 z-[-2] min-h-screen w-full lg:bg-radial-gradient-desktop"></div>
       <body className={`${montserrat.className} font-montserrat`}>
         {" "}
         <ThemeProvider
