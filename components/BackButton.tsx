@@ -1,9 +1,9 @@
 "use client";
 
-// Next hooks
+// Next
 import { useRouter } from "next/navigation";
 
-// Shadcn/ui components
+// Components
 import { Button } from "./ui/button";
 
 // Icons

@@ -1,9 +1,10 @@
 "use client";
 
-// Next hooks
+// Next
 import { usePathname } from "next/navigation";
 
-// Custom components
+// Components
+import { Logo } from "./Logo";
 import { MobileMenu } from "./MobileMenu";
 import { ToggleThemeButton } from "./ToggleThemeButton";
 
@@ -12,7 +13,6 @@ import Link from "next/link";
 
 // Icons
 import { FileText, HomeIcon, MessageSquare } from "lucide-react";
-import { Logo } from "./Logo";
 
 export function Header() {
   const pathname = usePathname();

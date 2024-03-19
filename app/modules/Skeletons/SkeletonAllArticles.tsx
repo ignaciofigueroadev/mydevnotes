@@ -1,4 +1,4 @@
-// Custom components
+// Components
 import { ArticleSearch } from "@/components/ArticleSearch";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";

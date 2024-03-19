@@ -1,8 +1,8 @@
-// Custom components
+// Components
 import { Header } from "@/components/Header";
-
-// Next components
 import { ScrollDown } from "@/components/ScrollDown";
+
+// Next
 import Link from "next/link";
 
 export function Home() {

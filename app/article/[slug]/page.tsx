@@ -1,13 +1,11 @@
 "use client";
 
-// Custom components
+// Components
 import { SkeletonArticleDetails } from "@/app/modules/Skeletons/SkeletonArticleDetails";
 import { RichTextComponents } from "@/components/RichTextComponents";
 
-// Get articles
-import { useArticlesSlug } from "@/hooks/useArticleSlug";
-
 // Utils
+import { useArticlesSlug } from "@/hooks/useArticleSlug";
 import { PortableText } from "@portabletext/react";
 
 type Props = {

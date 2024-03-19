@@ -1,10 +1,10 @@
 "use client";
 
-// Custom components
+// Components
 import { ArticleCard } from "@/components/ArticleCard";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
-// Get articles
+// Utils
 import { useArticles } from "@/hooks/useArticles";
 
 // Types

@@ -4,10 +4,9 @@
 import { PostCard } from "@/components/PostCard";
 import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 
-// Get articles
+// Utils
 import { usePosts } from "@/hooks/usePosts";
 
-// Types
 import {
   Dialog,
   DialogContent,

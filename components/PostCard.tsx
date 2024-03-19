@@ -1,4 +1,4 @@
-// Shadcn/ui components
+// Components
 import {
   Card,
   CardContent,
@@ -7,8 +7,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { QuoteIcon } from "lucide-react";
-
-// Icon
 
 interface PostCardProps {
   title?: string;

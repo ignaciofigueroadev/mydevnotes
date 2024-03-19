@@ -1,7 +1,7 @@
 // React
 import { ChangeEvent } from "react";
 
-// Shadcn/ui imports
+// Components
 import {
   Tooltip,
   TooltipContent,

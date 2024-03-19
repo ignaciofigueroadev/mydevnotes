@@ -1,4 +1,4 @@
-// Custom components
+// Components
 import { BackButton } from "@/components/BackButton";
 import { Logo } from "@/components/Logo";
 

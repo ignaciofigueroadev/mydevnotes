@@ -1,8 +1,9 @@
 "use client";
 
+// Hooks
 import { useState } from "react";
 
-// Custom components
+// Components
 import { ArticleCard } from "@/components/ArticleCard";
 import { ArticleSearch } from "@/components/ArticleSearch";
 import { Footer } from "@/components/Footer";
@@ -10,7 +11,7 @@ import { Header } from "@/components/Header";
 import { ScrollDown } from "@/components/ScrollDown";
 import { SkeletonAllArticles } from "./Skeletons/SkeletonAllArticles";
 
-// Get posts
+// Utils
 import { useArticles } from "@/hooks/useArticles";
 
 // Types

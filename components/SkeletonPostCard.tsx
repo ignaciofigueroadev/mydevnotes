@@ -1,4 +1,4 @@
-// Shadcn/ui Components
+// Components
 import {
   Card,
   CardContent,

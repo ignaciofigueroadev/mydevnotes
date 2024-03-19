@@ -15,10 +15,8 @@ import {
 } from "@/components/ui/dialog";
 import { SkeletonAllPosts } from "./Skeletons/SkeletonAllPosts";
 
-// Get posts
+// Utils
 import { usePosts } from "@/hooks/usePosts";
-
-// Portable text
 import { PortableText } from "@portabletext/react";
 
 // Next

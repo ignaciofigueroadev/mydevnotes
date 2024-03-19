@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-// Shadcn/ui components
+// Components
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Card,
@@ -14,10 +14,10 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "./ui/badge";
 
-// Icon
+// Icons
 import { ArrowUpRight } from "lucide-react";
 
-// Next imports
+// Next
 import Link from "next/link";
 
 // Sanity

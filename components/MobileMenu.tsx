@@ -1,18 +1,16 @@
 "use client";
 
-// Shadcn/ui components
+// Components
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ToggleThemeButton } from "./ToggleThemeButton";
 
-// Menu
+// Icons
 import { Menu } from "lucide-react";
 
-// Next imports
+// Next
 import Link from "next/link";
-
-// Next hooks
 import { usePathname } from "next/navigation";
-import { ToggleThemeButton } from "./ToggleThemeButton";
 
 export function MobileMenu() {
   const pathname = usePathname();

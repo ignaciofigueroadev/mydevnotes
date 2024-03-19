@@ -1,4 +1,4 @@
-// Shadcn/ui components
+// Components
 import {
   Dialog,
   DialogContent,
@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import { Separator } from "./ui/separator";
 
-// NEXT
+// Next
 import Link from "next/link";
 
 // Icons

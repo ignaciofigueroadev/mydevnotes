@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/theme-provider/theme-provider";
 // JETBRAINS font
 import { montserrat } from "@/font/montserrat";
 
-// ProgressBar Component
+// Utils
 import NextTopLoader from "nextjs-toploader";
 
 // Global styles
