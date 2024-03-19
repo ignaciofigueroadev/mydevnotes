@@ -26,13 +26,6 @@ export const metadata: Metadata = {
       "Welcome where tech meets curiosity. Quick reads on web development, fun facts, history, tips, and more.",
     images: "/app/opengraph-image.png",
   },
-  twitter: {
-    site: "@ignaciodev",
-    title: "My Dev Notes | Home",
-    description:
-      "Welcome where tech meets curiosity. Quick reads on web development, fun facts, history, tips, and more.",
-    images: "/app/twitter-image.png",
-  },
   keywords: [
     "Blog",
     "Developers",
