@@ -14,7 +14,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL(
+    "https://mydevnotes-chi.vercel.app" ?? "http://localhost:3000"
+  ),
   title: "My Dev Notes | Home",
   description:
     "Welcome where tech meets curiosity. Quick reads on web development, fun facts, history, tips, and more.",
