@@ -6,9 +6,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ToggleThemeButton } from "./ToggleThemeButton";
 
 // Icons
-import { Menu } from "lucide-react";
+import { HomeIcon, Menu, MessageSquare, SheetIcon } from "lucide-react";
 
 // Next
+import { navItems } from "@/constants/site";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -23,43 +24,40 @@ export function MobileMenu() {
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
-        <ul className="flex flex-col gap-14 pt-32 py-10 pl-8 items-end md:w-full md:min-h-0 text-2xl">
-          <li className="hover:opacity-70 duration-100">
-            <Link
-              href="/"
-              className={`${
-                pathname === "/"
-                  ? "bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text font-bold"
-                  : ""
-              }`}
-            >
-              Home
-            </Link>
-          </li>
-          <li className="hover:opacity-70 duration-100 ease-out transition-opacity">
-            <Link
-              href="/posts"
-              className={`${
-                pathname === "/posts"
-                  ? "bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text font-bold"
-                  : ""
-              }`}
-            >
-              Posts
-            </Link>
-          </li>
-          <li className="hover:opacity-70 duration-100 ease-out transition-opacity">
-            <Link
-              href="/articles"
-              className={`${
-                pathname === "/articles"
-                  ? "bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-pretty text-transparent bg-clip-text font-bold"
-                  : ""
-              }`}
-            >
-              Articles
-            </Link>
-          </li>
+        <ul className="flex flex-col gap-7 pt-32 py-10 pl-8 items-end md:w-full md:min-h-0 text-2xl">
+          {navItems.map((navItem, index) => {
+            let IconComponent;
+            switch (navItem.icon) {
+              case "home":
+                IconComponent = <HomeIcon size=".75rem" />;
+                break;
+              case "post":
+                IconComponent = <MessageSquare size=".75rem" />;
+                break;
+              case "article":
+                IconComponent = <SheetIcon size=".75rem" />;
+                break;
+              default:
+                IconComponent = null;
+            }
+            return (
+              <li key={index}>
+                <Button asChild variant="navItem" title={navItem.title}>
+                  <Link
+                    href={navItem.href}
+                    className={`flex gap-1 ${
+                      pathname === `${navItem.href}`
+                        ? "dark:bg-gray-600 dark:bg-opacity-30 bg-gray-300 bg-opacity-50"
+                        : ""
+                    }`}
+                  >
+                    {IconComponent}
+                    {navItem.title}
+                  </Link>
+                </Button>
+              </li>
+            );
+          })}
           <li>
             <ToggleThemeButton />
           </li>

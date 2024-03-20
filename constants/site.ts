@@ -21,13 +21,16 @@ export const navItems = [
   {
     title: "Home",
     href: "/",
+    icon: "home",
   },
   {
     title: "Posts",
     href: "/posts",
+    icon: "post",
   },
   {
     title: "Articles",
     href: "/articles",
+    icon: "article",
   },
 ];

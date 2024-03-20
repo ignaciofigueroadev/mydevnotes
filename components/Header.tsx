@@ -11,7 +11,7 @@ import { ToggleThemeButton } from "./ToggleThemeButton";
 import { Button } from "./ui/button";
 
 // Icons
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, MessageSquare, SheetIcon } from "lucide-react";
 
 // Utils
 import { navItems } from "@/constants/site";
@@ -29,6 +29,20 @@ export function Header() {
         <nav className="hidden lg:block">
           <ul className="flex flex-col p-2 gap-5 w-screen items-center md:w-full md:flex-row md:min-h-0">
             {navItems.map((navItem, index) => {
+              let IconComponent;
+              switch (navItem.icon) {
+                case "home":
+                  IconComponent = <HomeIcon size=".75rem" />;
+                  break;
+                case "post":
+                  IconComponent = <MessageSquare size=".75rem" />;
+                  break;
+                case "article":
+                  IconComponent = <SheetIcon size=".75rem" />;
+                  break;
+                default:
+                  IconComponent = null;
+              }
               return (
                 <li key={index}>
                   <Button asChild variant="navItem" title={navItem.title}>
@@ -40,7 +54,7 @@ export function Header() {
                           : ""
                       }`}
                     >
-                      <HomeIcon size=".75rem" />
+                      {IconComponent}
                       {navItem.title}
                     </Link>
                   </Button>
