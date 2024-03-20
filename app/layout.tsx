@@ -8,7 +8,7 @@ import { montserrat } from "@/font/montserrat";
 import NextTopLoader from "nextjs-toploader";
 
 // Global styles
-import "./globals.css";
+import "./../styles/globals.css";
 
 // Metadata
 import type { Metadata } from "next";
