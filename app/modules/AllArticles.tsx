@@ -11,6 +11,7 @@ import { Header } from "@/components/Header";
 import { SkeletonAllArticles } from "./Skeletons/SkeletonAllArticles";
 
 // Utils
+import { allArticles } from "@/constants/site";
 import { useArticles } from "@/hooks/useArticles";
 
 // Types
@@ -39,10 +40,11 @@ export default function AllArticles() {
       <Header />
       <section className="py-10 flex flex-col gap-5">
         <div className="flex flex-col justify-center gap-3 min-h-[60vh]">
-          <h3 className="font-bold text-6xl lg:text-8xl">Articles</h3>
+          <h3 className="font-bold text-6xl lg:text-8xl">
+            {allArticles.title}
+          </h3>
           <p className="text-xs lg:text-sm opacity-75">
-            In this section you are going to find articles about tech and
-            coding. Check them!
+            {allArticles.description}
           </p>
         </div>
         <div className="flex items-center gap-4">
@@ -55,7 +57,7 @@ export default function AllArticles() {
           {filteredPosts.length === 0 ? (
             <div className="col-span-4">
               <p className="text-center">
-                No articles found. Please try a different search term.
+                {allArticles.fallbackNoArticlesFound}
               </p>
             </div>
           ) : (
