@@ -39,7 +39,7 @@ export default function AllArticles() {
       <Header />
       <section className="py-10 flex flex-col gap-5">
         <div className="flex flex-col justify-center gap-3 min-h-[60vh]">
-          <h3 className="font-bold text-6xl lg:text-7xl">Articles</h3>
+          <h3 className="font-bold text-6xl lg:text-8xl">Articles</h3>
           <p className="text-xs lg:text-sm opacity-75">
             In this section you are going to find articles about tech and
             coding. Check them!

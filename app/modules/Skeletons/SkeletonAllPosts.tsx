@@ -12,7 +12,7 @@ export function SkeletonAllPosts() {
       <section className="py-10">
         <div className=" flex flex-col gap-5">
           <div className="flex flex-col gap-3 justify-center min-h-[60vh]">
-            <h3 className="font-bold text-5xl lg:text-7xl">Posts</h3>
+            <h3 className="font-bold text-5xl lg:text-8xl">Posts</h3>
             <p className="text-xs lg:text-sm opacity-75">
               In this section you are going to find quick posts as tips and
               advices.

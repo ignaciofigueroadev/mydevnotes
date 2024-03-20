@@ -10,7 +10,7 @@ export function SkeletonAllArticles() {
       <Header />
       <div className="flex flex-col gap-2 py-10">
         <div className="flex flex-col gap-3 justify-center min-h-[60vh]">
-          <h3 className="font-bold text-5xl lg:text-7xl">Articles</h3>
+          <h3 className="font-bold text-5xl lg:text-8xl">Articles</h3>
           <p className="text-xs lg:text-sm opacity-75">
             In this section you are going to find articles about tech and
             coding. Check them!
