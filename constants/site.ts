@@ -16,3 +16,18 @@ export const allArticles = {
   fallbackNoArticlesFound:
     "No articles found. Please try a different search term.",
 };
+
+export const navItems = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Posts",
+    href: "/posts",
+  },
+  {
+    title: "Articles",
+    href: "/articles",
+  },
+];

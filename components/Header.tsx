@@ -1,18 +1,20 @@
 "use client";
 
 // Next
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 // Components
 import { Logo } from "./Logo";
 import { MobileMenu } from "./MobileMenu";
 import { ToggleThemeButton } from "./ToggleThemeButton";
-
-// Next
-import Link from "next/link";
+import { Button } from "./ui/button";
 
 // Icons
-import { FileText, HomeIcon, MessageSquare } from "lucide-react";
+import { HomeIcon } from "lucide-react";
+
+// Utils
+import { navItems } from "@/constants/site";
 
 export function Header() {
   const pathname = usePathname();
@@ -26,39 +28,25 @@ export function Header() {
         </div>
         <nav className="hidden lg:block">
           <ul className="flex flex-col p-2 gap-5 w-screen items-center md:w-full md:flex-row md:min-h-0">
-            <li>
-              <Link
-                href="/"
-                className={`flex gap-1 hover:bg-indigo-400 hover:text-white py-3 px-7 rounded-full justify-center items-center cursor-default duration-150 ${
-                  pathname === "/" ? "bg-indigo-400 text-white" : ""
-                }`}
-              >
-                <HomeIcon size=".75rem" />
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/posts"
-                className={`flex gap-1 hover:bg-fuchsia-600 hover:text-white py-3 px-7 rounded-full justify-center items-center cursor-default duration-150 ${
-                  pathname === "/posts" ? "bg-fuchsia-600 text-white" : ""
-                }`}
-              >
-                <MessageSquare size=".75rem" />
-                Posts
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/articles"
-                className={`flex gap-1 hover:bg-pink-400 hover:text-white py-3 px-7 rounded-full justify-center items-center cursor-default duration-150 ${
-                  pathname === "/articles" ? "bg-pink-400 text-white" : ""
-                }`}
-              >
-                <FileText size=".75rem" />
-                Articles
-              </Link>
-            </li>
+            {navItems.map((navItem, index) => {
+              return (
+                <li key={index}>
+                  <Button asChild variant="navItem" title={navItem.title}>
+                    <Link
+                      href={navItem.href}
+                      className={`flex gap-1 ${
+                        pathname === `${navItem.href}`
+                          ? "dark:bg-gray-600 dark:bg-opacity-30 bg-gray-300 bg-opacity-50"
+                          : ""
+                      }`}
+                    >
+                      <HomeIcon size=".75rem" />
+                      {navItem.title}
+                    </Link>
+                  </Button>
+                </li>
+              );
+            })}
             <li>
               <ToggleThemeButton />
             </li>

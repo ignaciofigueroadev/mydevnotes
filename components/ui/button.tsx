@@ -16,8 +16,12 @@ const buttonVariants = cva(
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-purple-700 hover:text-accent-foreground",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        navItem:
+          "dark:hover:bg-gray-600 dark:hover:bg-opacity-30 hover:bg-gray-300 hover:bg-opacity-50",
+        backButton:
+          "dark:bg-gray-600 dark:bg-opacity-30 bg-gray-300 bg-opacity-50",
       },
       size: {
         default: "h-10 px-4 py-2",
