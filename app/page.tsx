@@ -9,7 +9,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function HomePage() {
   return (
-    <div className="grid m-auto grid-cols-1 gap-6">
+    <div>
       <Home />
       <LatestArticles />
       <Separator />

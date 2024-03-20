@@ -8,7 +8,6 @@ import { ArticleCard } from "@/components/ArticleCard";
 import { ArticleSearch } from "@/components/ArticleSearch";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { ScrollDown } from "@/components/ScrollDown";
 import { SkeletonAllArticles } from "./Skeletons/SkeletonAllArticles";
 
 // Utils
@@ -18,7 +17,6 @@ import { useArticles } from "@/hooks/useArticles";
 import { ArticleTypes } from "@/types/article.types";
 
 // Next
-import Link from "next/link";
 
 export default function AllArticles() {
   const { articles, isError, isLoading } = useArticles();
@@ -40,17 +38,12 @@ export default function AllArticles() {
     <>
       <Header />
       <section className="py-10 flex flex-col gap-5">
-        <div className="flex flex-col justify-center items-center gap-3 min-h-[60vh] text-center">
-          <h3 className="font-bold text-6xl lg:text-8xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">
-            Articles
-          </h3>
-          <p className="text-xs lg:text-lg">
+        <div className="flex flex-col justify-center gap-3 min-h-[60vh]">
+          <h3 className="font-bold text-6xl lg:text-7xl">Articles</h3>
+          <p className="text-xs lg:text-sm opacity-75">
             In this section you are going to find articles about tech and
             coding. Check them!
           </p>
-          <Link href="#all-articles">
-            <ScrollDown />
-          </Link>
         </div>
         <div className="flex items-center gap-4">
           <ArticleSearch onSearch={setSearchTerm} />
