@@ -1,5 +1,4 @@
 // Components
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SkeletonPostCard } from "@/components/SkeletonPostCard";
 
@@ -29,7 +28,6 @@ export function SkeletonAllPosts() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

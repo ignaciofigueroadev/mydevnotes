@@ -1,10 +1,10 @@
 "use client";
 
 // Next
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 // Components
+import { LinkTransition } from "./LinkTransition";
 import { Logo } from "./Logo";
 import { MobileMenu } from "./MobileMenu";
 import { ToggleThemeButton } from "./ToggleThemeButton";
@@ -46,7 +46,7 @@ export function Header() {
               return (
                 <li key={index}>
                   <Button asChild variant="navItem" title={navItem.title}>
-                    <Link
+                    <LinkTransition
                       href={navItem.href}
                       className={`flex gap-1 ${
                         pathname === `${navItem.href}`
@@ -56,7 +56,7 @@ export function Header() {
                     >
                       {IconComponent}
                       {navItem.title}
-                    </Link>
+                    </LinkTransition>
                   </Button>
                 </li>
               );

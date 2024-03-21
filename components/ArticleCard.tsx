@@ -12,13 +12,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { LinkTransition } from "./LinkTransition";
 import { Badge } from "./ui/badge";
 
 // Icons
 import { ArrowUpRight } from "lucide-react";
-
-// Next
-import Link from "next/link";
 
 // Sanity
 import { client } from "@/sanity/lib/client";
@@ -72,13 +70,13 @@ export function ArticleCard({
   const formattedDate = originalDate.toLocaleDateString();
 
   return (
-    <Link
+    <LinkTransition
       href={`/article/${slug?.current}`}
       className={`cursor-default ${className}`}
     >
       <Card
         className={
-          "group hover:border-purple-600 border-[.0625rem] transition-[border, translate] duration-150 flex-1 article-fade shadow-md hover:shadow-lg hover:backdrop-brightness-150 transition-all ease-in-out"
+          "group hover:border-purple-600 border-[.0625rem] transition-[border, translate] duration-150 flex-1 article-fade shadow-sm hover:shadow-lg hover:backdrop-brightness-150 transition-all ease-in-out"
         }
       >
         <div className="hover:shadow-dark-box-shadow-card rounded-md">
@@ -119,6 +117,6 @@ export function ArticleCard({
           </CardFooter>
         </div>
       </Card>
-    </Link>
+    </LinkTransition>
   );
 }

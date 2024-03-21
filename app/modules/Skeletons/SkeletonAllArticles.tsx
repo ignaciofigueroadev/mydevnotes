@@ -1,6 +1,5 @@
 // Components
 import { ArticleSearch } from "@/components/ArticleSearch";
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
 
@@ -26,7 +25,6 @@ export function SkeletonAllArticles() {
           <SkeletonArticleCard />
         </section>
       </div>
-      <Footer />
     </>
   );
 }
