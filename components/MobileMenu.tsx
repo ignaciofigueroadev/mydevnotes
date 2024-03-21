@@ -3,15 +3,17 @@
 // Components
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { LinkTransition } from "./LinkTransition";
 import { ToggleThemeButton } from "./ToggleThemeButton";
 
 // Icons
 import { Menu } from "lucide-react";
 
 // Next
-import { navItems } from "@/constants/site";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+// Utils
+import { navItems } from "@/constants/site";
 
 export function MobileMenu() {
   const pathname = usePathname();
@@ -29,7 +31,7 @@ export function MobileMenu() {
             return (
               <li key={index}>
                 <Button asChild variant="navItem" title={navItem.title}>
-                  <Link
+                  <LinkTransition
                     href={navItem.href}
                     className={`flex gap-1 ${
                       pathname === `${navItem.href}`
@@ -38,7 +40,7 @@ export function MobileMenu() {
                     }`}
                   >
                     {navItem.title}
-                  </Link>
+                  </LinkTransition>
                 </Button>
               </li>
             );

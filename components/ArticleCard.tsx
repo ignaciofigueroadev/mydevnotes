@@ -12,7 +12,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { LinkTransition } from "./LinkTransition";
 import { Badge } from "./ui/badge";
 
 // Icons
@@ -21,6 +20,9 @@ import { ArrowUpRight } from "lucide-react";
 // Sanity
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
+
+// Next
+import Link from "next/link";
 
 interface ArticleCardProps {
   author?: string;
@@ -70,7 +72,7 @@ export function ArticleCard({
   const formattedDate = originalDate.toLocaleDateString();
 
   return (
-    <LinkTransition
+    <Link
       href={`/article/${slug?.current}`}
       className={`cursor-default ${className}`}
     >
@@ -117,6 +119,6 @@ export function ArticleCard({
           </CardFooter>
         </div>
       </Card>
-    </LinkTransition>
+    </Link>
   );
 }
