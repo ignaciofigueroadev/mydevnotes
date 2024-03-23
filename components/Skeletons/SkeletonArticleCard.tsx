@@ -5,8 +5,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./ui/card";
-import { Skeleton } from "./ui/skeleton";
+} from "../ui/card";
+import { Skeleton } from "../ui/skeleton";
 
 export function SkeletonArticleCard() {
   return (

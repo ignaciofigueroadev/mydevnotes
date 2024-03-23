@@ -1,7 +1,7 @@
 // Modules
-import { Home } from "./modules/Home";
-import { LatestArticles } from "./modules/LatestArticles";
-import { LatestPosts } from "./modules/LatestPosts";
+import { HomeSection } from "@/app/modules/home-section";
+import { LatestArticlesSection } from "./modules/latest-articles-section";
+import { LatestPostsSection } from "./modules/latest-posts-section";
 
 // Components
 import { Separator } from "@/components/ui/separator";
@@ -9,10 +9,10 @@ import { Separator } from "@/components/ui/separator";
 export default function HomePage() {
   return (
     <section>
-      <Home />
-      <LatestArticles />
+      <HomeSection />
+      <LatestArticlesSection />
       <Separator />
-      <LatestPosts />
+      <LatestPostsSection />
     </section>
   );
 }

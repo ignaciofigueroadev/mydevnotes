@@ -11,14 +11,14 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { SkeletonAllPosts } from "./Skeletons/SkeletonAllPosts";
+import { SkeletonAllPosts } from "../../components/Skeletons/SkeletonAllPosts";
 
 // Utils
 import { allPosts } from "@/constants/site";
 import { usePosts } from "@/hooks/usePosts";
 import { PortableText } from "@portabletext/react";
 
-export default function Posts() {
+export default function PostsSection() {
   const { isError, isLoading, posts } = usePosts();
 
   if (isLoading) {

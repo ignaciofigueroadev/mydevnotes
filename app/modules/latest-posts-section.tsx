@@ -2,7 +2,7 @@
 
 // Custom components
 import { PostCard } from "@/components/PostCard";
-import { SkeletonPostCard } from "@/components/SkeletonPostCard";
+import { SkeletonPostCard } from "@/components/Skeletons/SkeletonPostCard";
 
 // Utils
 import { usePosts } from "@/hooks/usePosts";
@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/dialog";
 import { PortableText } from "@portabletext/react";
 
-export function LatestPosts() {
+export function LatestPostsSection() {
   const { posts, isError, isLoading } = usePosts();
 
   if (isLoading) {

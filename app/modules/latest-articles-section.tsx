@@ -2,7 +2,7 @@
 
 // Components
 import { ArticleCard } from "@/components/ArticleCard";
-import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
+import { SkeletonArticleCard } from "@/components/Skeletons/SkeletonArticleCard";
 
 // Utils
 import { useArticles } from "@/hooks/useArticles";
@@ -10,7 +10,7 @@ import { useArticles } from "@/hooks/useArticles";
 // Types
 import { ArticleTypes } from "@/types/article.types";
 
-export function LatestArticles() {
+export function LatestArticlesSection() {
   const { articles, isError, isLoading } = useArticles();
 
   if (isLoading) {

@@ -1,6 +1,6 @@
 // Module
-import AllArticles from "@/app/modules/AllArticles";
+import AllArticlesSection from "@/app/modules/articles-section";
 
 export default function AllArticlesPage() {
-  return <AllArticles />;
+  return <AllArticlesSection />;
 }

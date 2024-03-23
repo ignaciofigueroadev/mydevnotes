@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 // Config
 import { home } from "@/constants/site";
 
-export function Home() {
+export function HomeSection() {
   return (
     <>
       <Header />

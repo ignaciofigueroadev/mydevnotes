@@ -7,7 +7,7 @@ import { useState } from "react";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ArticleSearch } from "@/components/ArticleSearch";
 import { Header } from "@/components/Header";
-import { SkeletonAllArticles } from "./Skeletons/SkeletonAllArticles";
+import { SkeletonAllArticles } from "../../components/Skeletons/SkeletonAllArticles";
 
 // Utils
 import { allArticles } from "@/constants/site";
@@ -18,7 +18,7 @@ import { ArticleTypes } from "@/types/article.types";
 
 // Next
 
-export default function AllArticles() {
+export default function AllArticlesSection() {
   const { articles, isError, isLoading } = useArticles();
   const [searchTerm, setSearchTerm] = useState("");
 

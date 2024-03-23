@@ -1,7 +1,7 @@
 // Components
 import { ArticleSearch } from "@/components/ArticleSearch";
 import { Header } from "@/components/Header";
-import { SkeletonArticleCard } from "@/components/SkeletonArticleCard";
+import { SkeletonArticleCard } from "@/components/Skeletons/SkeletonArticleCard";
 
 export function SkeletonAllArticles() {
   return (

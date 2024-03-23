@@ -1,6 +1,6 @@
 // Components
 import { Header } from "@/components/Header";
-import { SkeletonPostCard } from "@/components/SkeletonPostCard";
+import { SkeletonPostCard } from "@/components/Skeletons/SkeletonPostCard";
 
 // Next
 

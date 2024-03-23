@@ -1,6 +1,6 @@
 // Module
-import Posts from "@/app/modules/Posts";
+import PostsSection from "@/app/modules/posts-section";
 
 export default function PostsPage() {
-  return <Posts />;
+  return <PostsSection />;
 }
