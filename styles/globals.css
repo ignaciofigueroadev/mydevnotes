@@ -78,14 +78,14 @@
 .post-fade {
   animation: linear fade both;
   -webkit-animation: linear fade both;
-  animation-range: entry 5% cover 35%;
+  animation-range: entry 40% cover 30%;
   animation-timeline: view();
 }
 
 .article-fade {
-  animation: linear fade both;
-  -webkit-animation: linear fade both;
-  animation-range: entry 10% cover 45%;
+  animation: normal fade both;
+  -webkit-animation: normal fade both;
+  animation-range: entry 40% cover 30%;
   animation-timeline: view();
 }
 
