@@ -1,6 +1,7 @@
 "use client";
 
 // Components
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PostCard } from "@/components/PostCard";
 import {
@@ -66,6 +67,7 @@ export default function PostsSection() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

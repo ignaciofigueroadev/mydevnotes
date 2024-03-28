@@ -6,6 +6,7 @@ import { useState } from "react";
 // Components
 import { ArticleCard } from "@/components/ArticleCard";
 import { ArticleSearch } from "@/components/ArticleSearch";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SkeletonAllArticles } from "../../components/Skeletons/SkeletonAllArticles";
 
@@ -77,6 +78,7 @@ export default function AllArticlesSection() {
           )}
         </div>
       </section>
+      <Footer />
     </>
   );
 }
