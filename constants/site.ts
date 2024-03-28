@@ -35,6 +35,13 @@ export const navItems = Object.freeze([
   },
 ]);
 
+export const footer = Object.freeze({
+  title: "My Dev Notes",
+  subtitle: "Coded by",
+  author: "Ignacio Figueroa",
+  href: "https://ignaciofigueroadev.vercel.app",
+});
+
 export const errors = Object.freeze({
   globalError: "Something went wrong!",
   tryAgainButton: "Try again",
