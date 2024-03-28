@@ -1,5 +1,8 @@
 "use client";
 
+// Utils
+import { errors } from "@/constants/site";
+
 export default function GlobalError({
   error,
   reset,
@@ -10,8 +13,8 @@ export default function GlobalError({
   return (
     <html>
       <body>
-        <h2>Something went wrong!</h2>
-        <button onClick={() => reset()}>Try again</button>
+        <h2>{errors.globalError}</h2>
+        <button onClick={() => reset()}>{errors.tryAgainButton}</button>
       </body>
     </html>
   );

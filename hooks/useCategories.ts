@@ -5,13 +5,16 @@ import { client } from "../sanity/lib/client";
 // SWR
 import useSWR from "swr";
 
+// Utils
+import { CATEGORY } from "@/constants/api";
+
 const fetcher = async (url: string) => {
   const data = await client.fetch(url);
   return data;
 };
 
 export function useCategories() {
-  const { data, error } = useSWR(groq`*[_type=="category"]`, fetcher);
+  const { data, error } = useSWR(groq`${CATEGORY.QUERY}`, fetcher);
 
   return {
     categories: data,

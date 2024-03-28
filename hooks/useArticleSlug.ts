@@ -5,17 +5,11 @@ import { client } from "../sanity/lib/client";
 // SWR
 import useSWR from "swr";
 
+// Utils
+import { ARTICLES } from "@/constants/api";
+
 const fetchArticleData = async (slug: string) => {
-  const result = await client.fetch(
-    groq`
-      *[_type == "article" && slug.current == $slug][0]{
-        ...,
-        "mainImage": mainImage.asset->url,
-        author->,
-        categories[]->
-      }`,
-    { slug }
-  );
+  const result = await client.fetch(groq`${ARTICLES.SLUG_QUERY}`, { slug });
   return result;
 };
 
